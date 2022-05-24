@@ -24,8 +24,7 @@ data() { return {
     setter : "All",
     piatti2: [],
     piatti: [
-
-
+        // insalate
         {
             nome: "Bresaola",
             categoria: "insalata",
@@ -39,6 +38,8 @@ data() { return {
             condimenti: "iceberg,rucola, valeriana, tonno, olive, mozzarella",
             prezzo: 10
         },
+
+        // piatti
         {
             nome: "Greca",
             categoria: "piatti",
@@ -46,13 +47,32 @@ data() { return {
             prezzo: 8,
             title: "I Nostri piatti"
         },
-
-        {
-            nome: "Caprese",
+                {
+            nome: "La Magra",
             categoria: "piatti",
-            condimenti: "datterino, fior di latte, basilico",
-            prezzo: 8
+            condimenti: "carpaccio di fassona, rucola, grana, vinagrette al limone, olio evo",
+            prezzo: 13,
         },
+                {
+            nome: "L'Adige",
+            categoria: "piatti",
+            condimenti: "carne salada “cotta”, fagioli borlotti, cipolla, olio evo",
+            prezzo: 13,
+        },
+        {
+            nome: "Un 'po' di tartarre",
+            categoria: "piatti",
+            condimenti: "tartare di fassona con mango e chicchi di melograno, senape",
+            prezzo: 15,
+        },
+        {
+            nome: "Sampieri",
+            categoria: "piatti",
+            condimenti: "tartare di salmone, avocado, erba cipollina, vinagrette al limone",
+            prezzo: 15,
+        },
+
+       
     ]
 
 }

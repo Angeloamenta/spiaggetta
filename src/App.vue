@@ -9,8 +9,21 @@
 
     </nav>
     <router-view/>
+    <PreFooter class="prefooter"/>
   </div>
 </template>
+
+<script>
+
+import PreFooter from "@/components/PreFooter.vue";
+
+export default {
+    components: {
+    PreFooter,
+  },
+}
+</script>
+
 
 <style>
 
@@ -39,5 +52,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.prefooter {
+  margin-top: 30px;
 }
 </style>
