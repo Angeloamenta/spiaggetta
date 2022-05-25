@@ -2,33 +2,35 @@
     <div class="">
       <div class="nav-2 container-fluid">
           <div class="row">
-          <div class="col-12">Cosa cerchi?</div>
+            <div class="col-12">Cosa cerchi?</div>
+          </div>
+          <div class="row mt-3">
           <div class="col-12 d-flex justify-content-center">
-          <ul class="list-unstyled d-flex justify-content-between w-50">
-            <li @click="setAll()" class="">Tutto</li>
-            <li @click="setPizzeClassiche()" class="">Pizze Classiche</li>
-            <li @click="setPizzeSpeciali()" class="">Pizze Speciali</li>
-            <li @click="setPizzeMare()">Pizze di Mare</li>
-            <li @click="setPiattiUnici()">Piatti Unici</li>
-            <li @click="setFrigitoria()">Frigitoria</li>
-         </ul>
+            <ul class="list-unstyled text-center row w-75">
+                <li class="col-12 col-md " @click="setAll()">Tutto</li>
+                <li class="col-12 col-md " @click="setPizzeClassiche()">Pizze Classiche</li>
+                <li class="col-12 col-md " @click="setPizzeSpeciali()">Pizze Speciali</li>
+                <li class="col-12 col-md " @click="setPizzeMare()">Pizze di Mare</li>
+                <li class="col-12 col-md " @click="setPiattiUnici()">Piatti Unici</li>
+                <li class="col-12 col-md " @click="setFrigitoria()">Frigitoria</li>
+            </ul>
           </div>
-          </div>
+        </div>
       </div>
       <div class="container-fluid">
           <div v-for="(piatto, index) in piatti2" :key="index" class="row">
-              <div  class="col-12">
+              <div v-show="piatto.title" class="col-12 text-center text-md-start my-3">
                     <h1>{{piatto.title}}</h1>
               </div>
-              <div class="col-4">
+              <div class="col-12 col-md-4 bg-fire">
                     <h3>{{piatto.nome}}</h3>
               </div>
-              <div class="col-4">
+              <div class="col-12 col-md-4 bg-fire">
                         <h5 v-if="piatto.condimenti == null"></h5>
                         <h5 v-else>Condimenti</h5>
                         <p>{{piatto.condimenti}}</p>
               </div>
-              <div class="col-4">
+              <div class="col-12 col-md-4 bg-fire">
                         <div>€ {{piatto.prezzo}}</div>
               </div>
           </div>
@@ -184,6 +186,12 @@ methods: {
      this.piatti2 = this.piatti;
     }
     },
+
+},
+watch() {
+
+
+
 }
 }
 </script>

@@ -3,26 +3,40 @@
       <div class="nav-2 container-fluid">
           <div class="row">
           <div class="col-12">Cosa cerchi?</div>
-          <div class="col-12">
-          <span @click="setAll()">all</span> <span @click="setInsalata()">insalate</span> <span @click="setPiatti()">piatti</span> <span @click="setDessert()">dessert</span>
-          <span @click="setBevande()">Bevande</span>
           </div>
+          <div class="row mt-3">
+              <div class="col-12 d-flex justify-content-center">
+                    <ul class="list-unstyled d-flex justify-content-between w-50">
+                        <li @click="setAll()" class="">Tutto</li>
+                        <li @click="setInsalata()" class="">Insalate</li>
+                        <li @click="setPiatti()" class="">Piatti</li>
+                        <li @click="setDessert()">Dessert</li>
+                        <li @click="setBevande()">Bevande</li>
+                    </ul>
+              </div>
           </div>
       </div>
       <div class="container-fluid">
           <div class="row">
-              <div class="col">
-                    <ul class="list-unstyled">
-                        <li v-for="(piatto, index) in piatti2" :key="index">
-                        <h1 :class="piatto.class">{{piatto.title}}</h1>
-                        <h3>{{piatto.nome}}</h3>
+      <div class="container-fluid">
+          <div v-for="(piatto, index) in piatti2" :key="index" class="row">
+              <div v-show="piatto.title" class="col-12">
+                    <h1>{{piatto.title}}</h1>
+              </div>
+              <div class="col-4">
+                    <h3>{{piatto.nome}}</h3>
+              </div>
+              <div class="col-4">
                         <h5 v-if="piatto.condimenti == null"></h5>
                         <h5 v-else>Condimenti</h5>
                         <p>{{piatto.condimenti}}</p>
-                        <div>€ {{piatto.prezzo}}</div>
-                        </li> 
-                    </ul>
               </div>
+              <div class="col-4">
+                        <div>€ {{piatto.prezzo}}</div>
+              </div>
+          </div>
+
+      </div>
           </div>
 
       </div>
