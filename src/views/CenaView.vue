@@ -17,11 +17,14 @@ export default {
 name:"CenaView",
 data() { return {
     piatti: [
+
+        // pizze clasiche
         {
             nome: "Biancaneve",
             categoria: "pizza",
             condimenti: "mozzarella, olio",
-            prezzo:5
+            prezzo:5,
+            title: "Pizze Classiche"
         },
         {
             nome: "Margherita",
@@ -35,6 +38,16 @@ data() { return {
             condimenti: "salsa di pomodoro,mozzarella,melanzana fritta, ricotta salata, olio",
             prezzo:7.5
         },
+
+        // pizze speciali
+
+
+        // pizze di mare
+
+
+        // piatti unici
+
+        // frigitoria
     ]
 
 }
