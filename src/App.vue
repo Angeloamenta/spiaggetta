@@ -41,7 +41,7 @@ export default {
 
 nav {
   padding: 30px;
-  background-color: rgb(126, 34, 231);
+  background-color: #4D3A78;
   text-align: center;
 }
 

@@ -12,9 +12,9 @@
       <div class="container-fluid">
           <div class="row">
               <div class="col">
-                    <ul>
+                    <ul class="list-unstyled">
                         <li v-for="(piatto, index) in piatti2" :key="index">
-                        <h1>{{piatto.title}}</h1>
+                        <h1 :class="piatto.class">{{piatto.title}}</h1>
                         <h3>{{piatto.nome}}</h3>
                         <h5 v-if="piatto.condimenti == null"></h5>
                         <h5 v-else>Condimenti</h5>
@@ -43,7 +43,8 @@ data() { return {
             categoria: "insalata",
             condimenti: "iceberg, radicchio,valeriana, datterino, grana, bresaola",
             prezzo: 10,
-            title: "Insalate"
+            title: "Insalate",
+            class: "bg-success"
         },
         {
             nome: "Tonno",

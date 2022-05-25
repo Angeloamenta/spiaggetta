@@ -18,7 +18,7 @@
       <div class="container-fluid">
           <div class="row">
               <div class="col">
-                    <ul>
+                    <ul class="list-unstyled">
                         <li v-for="(piatto, index) in piatti2" :key="index">
                         <h1>{{piatto.title}}</h1>
                         <h3>{{piatto.nome}}</h3>

@@ -9,7 +9,7 @@
   .nav-2 {
     width: 100%;
     text-align: center;
-    background-color: chocolate;
+    background-color: #463767;
     padding: 10px 0;
   }
 
@@ -19,6 +19,10 @@
     margin-top: 20px;
   }
 
+  .nav-2 * {
+    color: white;
+    cursor: pointer;
+  }
   .bg-span {
     background-color: aqua;
     
