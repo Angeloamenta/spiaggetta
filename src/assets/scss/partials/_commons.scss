@@ -36,3 +36,12 @@
   .bg-fire {
     background-color: rgb(230, 164, 78);
   }
+
+
+
+
+  @media only screen and (min-width: 576px) {
+    .bg-fire {
+      background-color: unset;
+    }
+  }

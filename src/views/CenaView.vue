@@ -22,15 +22,15 @@
               <div v-show="piatto.title" class="col-12 text-center text-md-start my-3">
                     <h1>{{piatto.title}}</h1>
               </div>
-              <div class="col-12 col-md-4 bg-fire">
+              <div class="col-12 col-md-4 bg-fire ">
                     <h3>{{piatto.nome}}</h3>
               </div>
-              <div class="col-12 col-md-4 bg-fire">
+              <div class="col-12 col-md-4 ">
                         <h5 v-if="piatto.condimenti == null"></h5>
                         <h5 v-else>Condimenti</h5>
                         <p>{{piatto.condimenti}}</p>
               </div>
-              <div class="col-12 col-md-4 bg-fire">
+              <div class="col-12 col-md-4 ">
                         <div>€ {{piatto.prezzo}}</div>
               </div>
           </div>
