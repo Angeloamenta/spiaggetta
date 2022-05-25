@@ -34,7 +34,6 @@
                         <div>€ {{piatto.prezzo}}</div>
               </div>
           </div>
-
       </div>
   </div>
 </template>
