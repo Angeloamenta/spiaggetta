@@ -16,18 +16,20 @@
           </div>
       </div>
       <div class="container-fluid">
-          <div class="row">
-              <div class="col">
-                    <ul class="list-unstyled">
-                        <li v-for="(piatto, index) in piatti2" :key="index">
-                        <h1>{{piatto.title}}</h1>
-                        <h3>{{piatto.nome}}</h3>
+          <div v-for="(piatto, index) in piatti2" :key="index" class="row">
+              <div  class="col-12">
+                    <h1>{{piatto.title}}</h1>
+              </div>
+              <div class="col-4">
+                    <h3>{{piatto.nome}}</h3>
+              </div>
+              <div class="col-4">
                         <h5 v-if="piatto.condimenti == null"></h5>
                         <h5 v-else>Condimenti</h5>
                         <p>{{piatto.condimenti}}</p>
+              </div>
+              <div class="col-4">
                         <div>€ {{piatto.prezzo}}</div>
-                        </li> 
-                    </ul>
               </div>
           </div>
 
