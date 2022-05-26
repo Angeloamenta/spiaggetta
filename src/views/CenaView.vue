@@ -35,12 +35,20 @@
               </div>
           </div>
       </div>
+    <PreFooter class="prefooter"/>
   </div>
 </template>
 
 <script>
+
+import PreFooter from "@/components/PreFooter.vue";
+
+
 export default {
 name:"CenaView",
+components: {
+    PreFooter
+},
 data() { return {
     setter : "All",
     piatti2: [],

@@ -38,13 +38,21 @@
               </div>
           </div>
       </div>
+          <PreFooter class="prefooter"/>
 </div>
   
 </template>
 
 <script>
+
+import PreFooter from "@/components/PreFooter.vue";
+
+
 export default {
 name:"DrinkVue",
+components: {
+    PreFooter
+},
 data() { return {
 
     setter : "All",
@@ -146,6 +154,9 @@ mounted() {
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
+
+    var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
+        console.log(newURL);
 },
 
 methods: {

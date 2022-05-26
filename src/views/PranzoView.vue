@@ -16,36 +16,41 @@
               </div>
           </div>
       </div>
-      <div class="container-fluid">
-          <div class="row">
-      <div class="container-fluid">
-          <div v-for="(piatto, index) in piatti2" :key="index" class="row">
-              <div v-show="piatto.title" class="col-12">
-                    <h1>{{piatto.title}}</h1>
-              </div>
-              <div class="col-4">
-                    <h3>{{piatto.nome}}</h3>
-              </div>
-              <div class="col-4">
-                        <h5 v-if="piatto.condimenti == null"></h5>
-                        <h5 v-else>Condimenti</h5>
-                        <p>{{piatto.condimenti}}</p>
-              </div>
-              <div class="col-4">
-                        <div>€ {{piatto.prezzo}}</div>
-              </div>
-          </div>
-
-      </div>
-          </div>
-
-      </div>
+        <div class="container-fluid">
+            <div class="row">
+        <div class="container-fluid">
+            <div v-for="(piatto, index) in piatti2" :key="index" class="row">
+                <div v-show="piatto.title" class="col-12">
+                        <h1>{{piatto.title}}</h1>
+                </div>
+                <div class="col-4">
+                        <h3>{{piatto.nome}}</h3>
+                </div>
+                <div class="col-4">
+                            <h5 v-if="piatto.condimenti == null"></h5>
+                            <h5 v-else>Condimenti</h5>
+                            <p>{{piatto.condimenti}}</p>
+                </div>
+                <div class="col-4">
+                            <div>€ {{piatto.prezzo}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <PreFooter class="prefooter"/>
   </div>
 </template>
 
 <script>
+
+import PreFooter from "@/components/PreFooter.vue";
+
 export default {
 name: "PranzoView",
+components: {
+    PreFooter
+},
 data() { return {
     
     setter : "All",
@@ -152,7 +157,8 @@ data() { return {
         },
 
        
-    ]
+    ],
+    
 
 }
 },
@@ -163,6 +169,20 @@ mounted() {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+        var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
+        console.log(window.location.protocol);
+        console.log(window.location.host);
+        console.log(window.location.pathname);
+        console.log(window.location.search);
+        console.log("ok");
+
+        console.log(newURL);
+
+        let proviamo = window.location.protocol + "//" + window.location.host + "/#/"
+
+        console.log(proviamo);
+
+ 
 },
 
 methods: {

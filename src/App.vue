@@ -9,7 +9,6 @@
 
     </nav>
     <router-view/>
-    <PreFooter class="prefooter"/>
   </div>
 </template>
 
