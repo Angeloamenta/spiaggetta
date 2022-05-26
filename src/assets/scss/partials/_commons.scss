@@ -9,8 +9,19 @@
   .nav-2 {
     width: 100%;
     text-align: center;
-    background-color: #463767;
     padding: 10px 0;
+  }
+
+  .nav-pranzo {
+    background-color: #ef9206;
+  } 
+
+  .nav-cena {
+    background-color: #e13d3d;
+  }
+
+  .nav-drink {
+    background-color: #d91286;
   }
 
   .nav-2 span {
@@ -42,6 +53,8 @@
   .ceruleo {
     background-color: #42a0bd !important;
   }
+
+  
 
 
   .try-bg:active{

@@ -1,6 +1,6 @@
 <template>
     <div class="">
-      <div class="nav-2 container-fluid">
+      <div class="nav-2 nav-cena container-fluid">
           <div class="row">
             <div class="col-12">Cosa cerchi?</div>
           </div>

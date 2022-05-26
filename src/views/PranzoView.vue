@@ -1,6 +1,6 @@
 <template>
   <div class="">
-      <div class="nav-2 container-fluid">
+      <div class="nav-2 nav-pranzo container-fluid">
           <div class="row">
           <div class="col-12">Cosa cerchi?</div>
           </div>
@@ -163,12 +163,6 @@ data() { return {
 }
 },
 mounted() {
-            if (window.location.hash = "#/pranzo") {
-            console.log("ok");
-            bar.classList.add("giallo")     
-      }
-
-
 
     this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
     console.log("new", this.piatti2);

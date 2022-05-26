@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <nav class="navbar-1">
-      <router-link to="/" @click="change()">Home</router-link> |
-      <!-- <router-link to="/about">About</router-link> | -->
-      <router-link to="/pranzo">Pranzo</router-link> |
-      <router-link to="/cena">Cena</router-link> |
-      <router-link to="/Drink">Drink</router-link>
+      <router-link to="/" @click.native="changeHome()">Home</router-link> |
+      <router-link to="/pranzo" @click.native="changePranzo()">Pranzo</router-link> |
+      <router-link to="/cena" @click.native="changeCena()">Cena</router-link> |
+      <router-link to="/Drink" @click.native="changeDrink()">Drink</router-link>
 
     </nav>
     <router-view/>
@@ -24,28 +23,120 @@ data() {
   return {
     page:"",
     route: window.location.hash,
-  }
-},
-watch: {
-  route: function(){
-    this.page = window.location.hash.split("#/")[1];
-    console.log("prova",this.page);
+
   }
 },
 mounted() {
+  console.log(window.location.hash);
+      let bar = document.querySelector(".navbar-1")
 
-  let bar = document.querySelector(".navbar-1")
-  console.log(bar);
+  if (window.location.hash == "#/") {
+  bar.classList.add("ceruleo")
+  }else if (window.location.hash == "#/pranzo") {
+    bar.classList.add("giallo")
 
-    if (window.location.hash = "#/") {
-            console.log("ok");
-            bar.classList.add("ceruleo")     
-      }
 
+  }else if (window.location.hash == "#/cena") {
+    bar.classList.add("rosso")
+
+
+  }else if (window.location.hash == "#/drink"){
+    bar.classList.add("viola")
+
+  }
 },
+
 methods: {
-  change() {
-    console.log("this.route");
+  
+  changeHome() {
+  let bar = document.querySelector(".navbar-1")
+  bar.classList.add("ceruleo")
+  if (bar.classList.contains("giallo")) {
+    bar.classList.remove("giallo")
+    
+  }
+
+    if (bar.classList.contains("viola")) {
+      bar.classList.remove("viola")
+    
+    
+  }
+
+    if (bar.classList.contains("rosso")) {
+      bar.classList.remove("rosso")
+    
+  }
+
+
+  },
+
+  changePranzo() {
+
+    let bar = document.querySelector(".navbar-1")
+    console.log(bar);
+    bar.classList.add("giallo")
+
+    if (bar.classList.contains("ceruleo")) {
+    bar.classList.remove("ceruleo")
+    
+  }
+
+    if (bar.classList.contains("viola")) {
+      bar.classList.remove("viola")
+    
+    
+  }
+
+  if (bar.classList.contains("rosso")) {
+      bar.classList.remove("rosso")
+    
+  }
+
+  },
+
+  changeCena() {
+  let bar = document.querySelector(".navbar-1")
+    bar.classList.add("rosso")
+
+      if (bar.classList.contains("giallo")) {
+    bar.classList.remove("giallo")
+    
+  }
+
+    if (bar.classList.contains("viola")) {
+      bar.classList.remove("viola")
+    
+    
+  }
+
+    if (bar.classList.contains("ceruleo")) {
+      bar.classList.remove("ceruleo")
+    
+  }
+ 
+
+  },
+
+  changeDrink() {
+  let bar = document.querySelector(".navbar-1")
+    bar.classList.add("viola")
+
+      if (bar.classList.contains("giallo")) {
+    bar.classList.remove("giallo")
+    
+  }
+
+    if (bar.classList.contains("ceruleo")) {
+      bar.classList.remove("ceruleo")
+    
+    
+  }
+
+    if (bar.classList.contains("rosso")) {
+      bar.classList.remove("rosso")
+    
+  }
+
   }
 }
 }
@@ -73,11 +164,19 @@ nav {
 }
 
   .ceruleo {
-    background-color: #42a0bd !important;
+    background-color: #42a0bd;
   }
 
   .giallo {
-    background-color: #ff9d0a !important;
+    background-color: #ff9d0a;
+  }
+
+  .rosso {
+    background-color: #e94949 ;
+  }
+
+  .viola {
+    background-color: #f20d93;
   }
 
 nav a {

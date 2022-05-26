@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="nav-2 container-fluid">
+    <div class="nav-2 nav-drink container-fluid">
         <div class="row">
             <div class="col-12">
                 Cosa cerchi?
