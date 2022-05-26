@@ -163,6 +163,13 @@ data() { return {
 }
 },
 mounted() {
+            if (window.location.hash = "#/pranzo") {
+            console.log("ok");
+            bar.classList.add("giallo")     
+      }
+
+
+
     this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
     console.log("new", this.piatti2);
     
@@ -178,9 +185,16 @@ mounted() {
 
         console.log(newURL);
 
-        let proviamo = window.location.protocol + "//" + window.location.host + "/#/"
+        let proviamo = window.location.protocol + "//" + window.location.host + "/#/" + "pranzo"
 
         console.log(proviamo);
+
+        console.log(window.location.hash);
+
+        if (window.location.hash = "#/pranzo") {
+            console.log("ok");
+            
+        }
 
  
 },
