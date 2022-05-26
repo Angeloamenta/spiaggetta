@@ -40,7 +40,7 @@ mounted() {
     bar.classList.add("rosso")
 
 
-  }else if (window.location.hash == "#/drink"){
+  }else if (window.location.hash == "#/Drink"){
     bar.classList.add("viola")
 
   }
