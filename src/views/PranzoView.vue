@@ -248,7 +248,7 @@ methods: {
 }
 </script>
 
-<style lang="scs" scoped>
+<style>
 
 
 

@@ -27,6 +27,7 @@ data() {
   }
 },
 mounted() {
+  
   console.log(window.location.hash);
       let bar = document.querySelector(".navbar-1")
 
@@ -147,7 +148,7 @@ methods: {
 <style>
 
  
- @import "./assets/scss/style.scss";
+
 
 
 #app {
