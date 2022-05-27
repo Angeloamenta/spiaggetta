@@ -1,5 +1,5 @@
 <template>
-  <div class="home .container-fluid">
+  <div class="home container-fluid">
     <div class="row">
       <div class="col d-flex justify-content-center align-items-center">
         Pagina iniziale
