@@ -6,7 +6,7 @@
           </div>
           <div class="row mt-3">
           <div class="col-12 d-flex justify-content-center">
-            <ul class="list-unstyled text-center row w-75">
+            <ul class="list-unstyled text-center h-100 d-flex align-items-center row w-75">
                 <li class="col-12 col-md elemento " @click="setAll()">Tutto</li>
                 <li class="col-12 col-md elemento " @click="setPizzeClassiche()">Pizze Classiche</li>
                 <li class="col-12 col-md elemento " @click="setPizzeSpeciali()">Pizze Speciali</li>

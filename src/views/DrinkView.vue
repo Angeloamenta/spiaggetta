@@ -8,7 +8,7 @@
         </div>
         <div class="row mt-3">
             <div class="col-12 d-flex justify-content-center">
-                <ul class="list-unstyled text-center row w-75">
+                <ul class="list-unstyled text-center h-100 d-flex align-items-center row w-75">
                     <li @click="setAll()" class="col-12 col-md elemento ">Tutto</li>
                     <li @click="setNostriDrink()" class="col-12 col-md elemento ">I nostri Drink</li>
                     <li @click="setClassici()" class="col-12 col-md elemento ">Classici</li>

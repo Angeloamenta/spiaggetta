@@ -6,7 +6,7 @@
           </div>
           <div class="row mt-3">
               <div class="col-12 d-flex justify-content-center">
-                    <ul class="list-unstyled text-center row w-75 ">
+                    <ul class="list-unstyled text-center h-100 d-flex align-items-center row w-75 ">
                         <li class="col-12 col-md elemento" @click="setAll()">Tutto</li>
                         <li class="col-12 col-md elemento" @click="setInsalata()">Insalate</li>
                         <li class="col-12 col-md elemento" @click="setPiatti()">Piatti</li>
@@ -325,6 +325,7 @@ methods: {
       background-color: #00000080;
       border-radius: 25px;
       color: white;
+      padding: 6px 0;
   }
 
 </style>>
