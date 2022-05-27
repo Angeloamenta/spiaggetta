@@ -9,23 +9,23 @@
         <div class="row mt-3">
             <div class="col-12 d-flex justify-content-center">
                 <ul class="list-unstyled text-center row w-75">
-                    <li @click="setAll()" class="col-12 col-md ">Tutto</li>
-                    <li @click="setNostriDrink()" class="col-12 col-md ">I nostri Drink</li>
-                    <li @click="setClassici()" class="col-12 col-md ">Classici</li>
-                    <li @click="setBevande()" class="col-12 col-md ">Bevande</li>
-                    <li @click="setAmari()" class="col-12 col-md ">Amari</li>
-                    <li @click="setDistillati()" class="col-12 col-md ">Distillati</li>
-                    <li @click="setGin()" class="col-12 col-md ">Gin</li>
+                    <li @click="setAll()" class="col-12 col-md elemento ">Tutto</li>
+                    <li @click="setNostriDrink()" class="col-12 col-md elemento ">I nostri Drink</li>
+                    <li @click="setClassici()" class="col-12 col-md elemento ">Classici</li>
+                    <li @click="setBevande()" class="col-12 col-md elemento ">Bevande</li>
+                    <li @click="setAmari()" class="col-12 col-md elemento ">Amari</li>
+                    <li @click="setDistillati()" class="col-12 col-md elemento ">Distillati</li>
+                    <li @click="setGin()" class="col-12 col-md elemento ">Gin</li>
                 </ul>
             </div>
         </div>
     </div>
           <div class="container-fluid">
           <div v-for="(drink, index) in drinks2" :key="index" class="row">
-              <div v-show="drink.title" class="col-12 text-center text-md-start my-3">
+              <div v-show="drink.title" class="col-12 text-center text-md-start mt-4 mb-4">
                     <h1>{{drink.title}}</h1>
               </div>
-              <div class="col-12 col-md-4 bg-fire ">
+              <div class="col-12 col-md-4 ">
                     <h3>{{drink.nome}}</h3>
               </div>
               <div class="col-12 col-md-4 ">
@@ -33,7 +33,7 @@
                         <h5 v-else>Ingredienti</h5>
                         <p>{{drink.condimenti}}</p>
               </div>
-              <div class="col-12 col-md-4 ">
+              <div class="col-12 col-md-4 mb-4">
                         <div>€ {{drink.prezzo}}</div>
               </div>
           </div>
@@ -54,7 +54,7 @@ components: {
     PreFooter
 },
 data() { return {
-
+    elementi: null,
     setter : "All",
     drinks2: [],
     drinks: [
@@ -157,6 +157,15 @@ mounted() {
 
     var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
         console.log(newURL);
+
+
+            const elementi = document.querySelectorAll(".elemento");
+        console.log("elementi", elementi);
+        console.log(Array.from(elementi));
+         const elementiArray = Array.from(elementi);
+         console.log(elementiArray);
+         this.elementi = elementiArray
+    this.elementi[0].classList.add("active-element")
 },
 
 methods: {
@@ -169,6 +178,16 @@ methods: {
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
+
+    this.elementi[0].classList.add("active-element")
+    if (this.elementi[1].classList.contains("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element") || this.elementi[6].classList.contains("active-element")) {
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+        this.elementi[6].classList.remove("active-element")
+    }
     },
 
     setNostriDrink() {
@@ -178,6 +197,15 @@ methods: {
     
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
+    }
+        this.elementi[1].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element") || this.elementi[6].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+        this.elementi[6].classList.remove("active-element")
     }
     },
 
@@ -189,6 +217,15 @@ methods: {
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
+    this.elementi[2].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.contains("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element") || this.elementi[6].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+        this.elementi[6].classList.remove("active-element")
+    }
     },
 
     setBevande() {
@@ -198,6 +235,15 @@ methods: {
     
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
+    }
+    this.elementi[3].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.contains("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element") || this.elementi[6].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+        this.elementi[6].classList.remove("active-element")
     }
     },
 
@@ -209,6 +255,15 @@ methods: {
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
+     this.elementi[4].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.contains("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[5].classList.contains("active-element") || this.elementi[6].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+        this.elementi[6].classList.remove("active-element")
+    }
     },
 
     setDistillati() {
@@ -219,6 +274,15 @@ methods: {
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
+    this.elementi[5].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.contains("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[6].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[6].classList.remove("active-element")
+    }
     },
 
     setGin() {
@@ -228,6 +292,15 @@ methods: {
     
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
+    }
+    this.elementi[6].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.contains("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
     }
     },
 }

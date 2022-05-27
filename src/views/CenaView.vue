@@ -7,12 +7,12 @@
           <div class="row mt-3">
           <div class="col-12 d-flex justify-content-center">
             <ul class="list-unstyled text-center row w-75">
-                <li class="col-12 col-md " @click="setAll()">Tutto</li>
-                <li class="col-12 col-md " @click="setPizzeClassiche()">Pizze Classiche</li>
-                <li class="col-12 col-md " @click="setPizzeSpeciali()">Pizze Speciali</li>
-                <li class="col-12 col-md " @click="setPizzeMare()">Pizze di Mare</li>
-                <li class="col-12 col-md " @click="setPiattiUnici()">Piatti Unici</li>
-                <li class="col-12 col-md " @click="setFrigitoria()">Frigitoria</li>
+                <li class="col-12 col-md elemento " @click="setAll()">Tutto</li>
+                <li class="col-12 col-md elemento " @click="setPizzeClassiche()">Pizze Classiche</li>
+                <li class="col-12 col-md elemento " @click="setPizzeSpeciali()">Pizze Speciali</li>
+                <li class="col-12 col-md elemento " @click="setPizzeMare()">Pizze di Mare</li>
+                <li class="col-12 col-md elemento " @click="setPiattiUnici()">Piatti Unici</li>
+                <li class="col-12 col-md elemento " @click="setFrigitoria()">Frigitoria</li>
             </ul>
           </div>
         </div>
@@ -50,6 +50,7 @@ components: {
     PreFooter
 },
 data() { return {
+    elementi: null,
     setter : "All",
     piatti2: [],
     piatti: [
@@ -131,6 +132,14 @@ mounted() {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+
+    const elementi = document.querySelectorAll(".elemento");
+        console.log("elementi", elementi);
+        console.log(Array.from(elementi));
+         const elementiArray = Array.from(elementi);
+         console.log(elementiArray);
+         this.elementi = elementiArray
+    this.elementi[0].classList.add("active-element")
 },
 
 methods: {
@@ -142,6 +151,16 @@ methods: {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+
+    this.elementi[0].classList.add("active-element")
+    if (this.elementi[1].classList.contains("active-element") || this.elementi[2].classList.remove("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element")) {
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+
+    }
     },
 
     setPizzeClassiche() {
@@ -151,6 +170,16 @@ methods: {
     
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
+    }
+
+     this.elementi[1].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[2].classList.remove("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+
     }
     },
 
@@ -162,6 +191,15 @@ methods: {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+      this.elementi[2].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.remove("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+    }
+    
     },
 
     setPizzeMare() {
@@ -171,6 +209,14 @@ methods: {
     
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
+    }
+      this.elementi[3].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.remove("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[4].classList.contains("active-element") || this.elementi[5].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
     }
     },
 
@@ -182,6 +228,14 @@ methods: {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+          this.elementi[4].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.remove("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[5].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[5].classList.remove("active-element")
+    }
     },
 
      setFrigitoria() {
@@ -191,6 +245,14 @@ methods: {
     
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
+    }
+    this.elementi[5].classList.add("active-element")
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.remove("active-element") || this.elementi[2].classList.contains("active-element") || this.elementi[3].classList.contains("active-element") || this.elementi[5].classList.contains("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
     }
     },
 
