@@ -6,12 +6,12 @@
           </div>
           <div class="row mt-3">
               <div class="col-12 d-flex justify-content-center">
-                    <ul class="list-unstyled d-flex justify-content-between w-50">
-                        <li @click="setAll()" class="">Tutto</li>
-                        <li @click="setInsalata()" class="">Insalate</li>
-                        <li @click="setPiatti()" class="">Piatti</li>
-                        <li @click="setDessert()">Dessert</li>
-                        <li @click="setBevande()">Bevande</li>
+                    <ul class="list-unstyled text-center row w-75 ">
+                        <li class="col-12 col-md elemento" @click="setAll()">Tutto</li>
+                        <li class="col-12 col-md elemento" @click="setInsalata()">Insalate</li>
+                        <li class="col-12 col-md elemento" @click="setPiatti()">Piatti</li>
+                        <li class="col-12 col-md elemento" @click="setDessert()">Dessert</li>
+                        <li class="col-12 col-md elemento" @click="setBevande()">Bevande</li>
                     </ul>
               </div>
           </div>
@@ -20,18 +20,18 @@
             <div class="row">
         <div class="container-fluid">
             <div v-for="(piatto, index) in piatti2" :key="index" class="row">
-                <div v-show="piatto.title" class="col-12">
+                <div v-show="piatto.title" class="col-12 text-center text-md-start mt-4 mb-4">
                         <h1>{{piatto.title}}</h1>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                         <h3>{{piatto.nome}}</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                             <h5 v-if="piatto.condimenti == null"></h5>
                             <h5 v-else>Condimenti</h5>
                             <p>{{piatto.condimenti}}</p>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4 mb-4">
                             <div>€ {{piatto.prezzo}}</div>
                 </div>
             </div>
@@ -46,13 +46,14 @@
 
 import PreFooter from "@/components/PreFooter.vue";
 
+
 export default {
 name: "PranzoView",
 components: {
     PreFooter
 },
 data() { return {
-    
+    elementi: null,
     setter : "All",
     piatti2: [],
     piatti: [
@@ -190,6 +191,12 @@ mounted() {
             
         }
 
+        const elementi = document.querySelectorAll(".elemento");
+        console.log("elementi", elementi);
+        console.log(Array.from(elementi));
+         const elementiArray = Array.from(elementi);
+         console.log(elementiArray);
+         this.elementi = elementiArray
  
 },
 
@@ -202,6 +209,9 @@ methods: {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+
+    this.elementi[0].classList.add("active-element")
+
     },
 
     setInsalata() {
@@ -250,7 +260,21 @@ methods: {
 
 <style>
 
+ .nav-2 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 
+  .nav-pranzo {
+    background-color: #ef9206;
+  } 
+
+  .active-element {
+      background-color: #00000080;
+      border-radius: 25px;
+      color: white;
+  }
 
 </style>>
 

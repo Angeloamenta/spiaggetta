@@ -5,7 +5,6 @@
       <router-link to="/pranzo" @click.native="changePranzo()">Pranzo</router-link> |
       <router-link to="/cena" @click.native="changeCena()">Cena</router-link> |
       <router-link to="/Drink" @click.native="changeDrink()">Drink</router-link>
-
     </nav>
     <router-view/>
   </div>

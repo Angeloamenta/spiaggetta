@@ -19,10 +19,10 @@
       </div>
       <div class="container-fluid">
           <div v-for="(piatto, index) in piatti2" :key="index" class="row">
-              <div v-show="piatto.title" class="col-12 text-center text-md-start my-3">
+              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3">
                     <h1>{{piatto.title}}</h1>
               </div>
-              <div class="col-12 col-md-4 bg-fire ">
+              <div class="col-12 col-md-4">
                     <h3>{{piatto.nome}}</h3>
               </div>
               <div class="col-12 col-md-4 ">
@@ -30,7 +30,7 @@
                         <h5 v-else>Condimenti</h5>
                         <p>{{piatto.condimenti}}</p>
               </div>
-              <div class="col-12 col-md-4 ">
+              <div class="col-12 col-md-4 mb-4">
                         <div>€ {{piatto.prezzo}}</div>
               </div>
           </div>
@@ -204,5 +204,15 @@ watch() {
 </script>
 
 <style>
+
+  .nav-2 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+    .nav-cena {
+    background-color: #e13d3d;
+  }
 
 </style>

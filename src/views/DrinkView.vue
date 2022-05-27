@@ -236,4 +236,14 @@ methods: {
 
 <style>
 
+  .nav-2 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+    .nav-drink {
+    background-color: #d91286;
+  }
+
 </style>
