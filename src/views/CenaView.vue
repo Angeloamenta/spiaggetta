@@ -66,13 +66,13 @@ data() { return {
         {
             nome: "Margherita",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro,mozzarella,basilico,olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, basilico,olio evo",
             prezzo:6
         },
         {
             nome: "Norma",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro,mozzarella,melanzana fritta, ricotta salata, olio",
+            condimenti: "salsa di pomodoro, mozzarella, melanzana fritta, ricotta salata, olio",
             prezzo:7.5
         },
 
@@ -271,6 +271,8 @@ watch() {
     width: 100%;
     text-align: center;
     padding: 10px 0;
+        color: white;
+    font-weight: 700;
   }
 
     .nav-cena {

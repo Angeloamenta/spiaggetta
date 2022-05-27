@@ -87,7 +87,7 @@ data() { return {
         {
             nome: "Fresh Alexander",
             categoria: "nostri",
-            condimenti: "(limone,orzata,brandy,stillabunt,bitter al cioccolato, ginger beer)",
+            condimenti: "(limone, orzata,brandy, stillabunt, bitter al cioccolato, ginger beer)",
             prezzo: 8
         },
 
@@ -313,6 +313,8 @@ methods: {
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    color: white;
+    font-weight: 700;
   }
 
     .nav-drink {

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="main">
       <div class="nav-2 nav-pranzo container-fluid">
           <div class="row">
           <div class="col-12">Cosa cerchi?</div>
@@ -16,28 +16,26 @@
               </div>
           </div>
       </div>
-        <div class="container-fluid">
-            <div class="row">
-        <div class="container-fluid">
-            <div v-for="(piatto, index) in piatti2" :key="index" class="row">
-                <div v-show="piatto.title" class="col-12 text-center text-md-start mt-4 mb-4">
-                        <h1>{{piatto.title}}</h1>
-                </div>
-                <div class="col-12 col-md-4">
-                        <h3>{{piatto.nome}}</h3>
-                </div>
-                <div class="col-12 col-md-4">
-                            <h5 v-if="piatto.condimenti == null"></h5>
-                            <h5 v-else>Condimenti</h5>
+            <div class="container-fluid">
+          <div v-for="(piatto, index) in piatti2" :key="index" class="row">
+              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3">
+                    <h1>{{piatto.title}}</h1>
+              </div>
+              <div class="col-12 col-md-4">
+                    <h3>{{piatto.nome}}</h3>
+              </div>
+              <div class="col-12 col-md-4 ">
+                        <h5 v-if="piatto.condimenti == null"></h5>
+                        <h5 v-else>Condimenti</h5>
+                        <div>
                             <p>{{piatto.condimenti}}</p>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                            <div>€ {{piatto.prezzo}}</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                        </div>
+              </div>
+              <div class="col-12 col-md-4 mb-4">
+                        <div>€ {{piatto.prezzo}}</div>
+              </div>
+          </div>
+      </div>
     <PreFooter class="prefooter"/>
   </div>
 </template>
@@ -61,7 +59,7 @@ data() { return {
         {
             nome: "Bresaola",
             categoria: "insalata",
-            condimenti: "iceberg, radicchio,valeriana, datterino, grana, bresaola",
+            condimenti: "iceberg, radicchio, valeriana, datterino, grana, bresaola",
             prezzo: 10,
             title: "Insalate",
             class: "bg-success"
@@ -75,7 +73,7 @@ data() { return {
         {
             nome: "Greca",
             categoria: "insalata",
-            condimenti: "iceberg,cipolla,olive,cetriolo,datterino,feta,salsa yogurt",
+            condimenti: "iceberg, cipolla, olive, cetriolo, datterino, feta, salsa yogurt",
             prezzo: 8,
         },
 
@@ -311,10 +309,17 @@ methods: {
 
 <style>
 
+/* .main {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+} */
+
  .nav-2 {
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    color: white;
+    font-weight: 700;
   }
 
   .nav-pranzo {
