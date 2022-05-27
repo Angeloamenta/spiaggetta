@@ -1,8 +1,10 @@
 <template>
   <div class="home container-fluid">
-    <div class="row">
+    <div class="row home-row">
       <div class="col d-flex justify-content-center align-items-center">
-        Pagina iniziale
+        <div class="icon">
+          <img src="../assets/spiaggettalogo.svg" alt="">
+        </div>
       </div>
     </div>
 
@@ -20,3 +22,17 @@ export default {
   }
 }
 </script>
+
+<style>
+
+
+.icon {
+  width: 300px;
+  height: 300px;
+}
+
+.home-row {
+  height: 80vh;
+}
+
+</style>

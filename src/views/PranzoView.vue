@@ -314,6 +314,15 @@ methods: {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 } */
 
+ .main {
+    /* background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.3)), url("../assets/pizzabg-03.png"); */
+   
+} 
+
+main * {
+    position: absolute;
+}
+
  .nav-2 {
     width: 100%;
     text-align: center;

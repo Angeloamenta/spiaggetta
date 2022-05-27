@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <nav class="navbar-1">
-      <router-link to="/" @click.native="changeHome()">Home</router-link> |
-      <router-link to="/pranzo" @click.native="changePranzo()">Pranzo</router-link> |
-      <router-link to="/cena" @click.native="changeCena()">Cena</router-link> |
-      <router-link to="/Drink" @click.native="changeDrink()">Drink</router-link>
+    <nav class="navbar-1 d-flex justify-content-center align-items-center p-3">
+      <div class="d-flex d-flex justify-content-around align-items-center w-50 h-100">
+        <router-link class="rout" to="/" @click.native="changeHome()">Home</router-link>
+      <router-link class="rout" to="/pranzo" @click.native="changePranzo()">Pranzo</router-link>
+      <router-link class="rout" to="/cena" @click.native="changeCena()">Cena</router-link>
+      <router-link class="rout" to="/Drink" @click.native="changeDrink()">Drink</router-link>
+      </div>
     </nav>
     <router-view/>
   </div>
@@ -185,7 +187,15 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  /* color: #42b983; */
+      background-color: #00000080;
+      border-radius: 25px;
+      color: white;
+}
+
+.rout {
+  padding: 6px 20px;
+  text-decoration: none;
 }
 
 .prefooter {
