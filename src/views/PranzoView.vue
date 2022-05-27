@@ -212,6 +212,13 @@ methods: {
 
     this.elementi[0].classList.add("active-element")
 
+    if (this.elementi[1].classList.contains("active-element") || this.elementi[2].classList.remove("active-element") || this.elementi[3].classList.remove("active-element") || this.elementi[4].classList.remove("active-element")) {
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+    }
+
     },
 
     setInsalata() {
@@ -222,6 +229,16 @@ methods: {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+
+    this.elementi[1].classList.add("active-element")
+
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[2].classList.remove("active-element") || this.elementi[3].classList.remove("active-element") || this.elementi[4].classList.remove("active-element")) {
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[2].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+    }
+
     },
 
       setPiatti() {
@@ -232,9 +249,22 @@ methods: {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+
+    this.elementi[2].classList.add("active-element")
+
+
+    if (this.elementi[0].classList.contains("active-element") || this.elementi[1].classList.remove("active-element") || this.elementi[3].classList.remove("active-element") || this.elementi[4].classList.remove("active-element")) {
+        this.elementi[1].classList.remove("active-element")
+        this.elementi[0].classList.remove("active-element")
+        this.elementi[3].classList.remove("active-element")
+        this.elementi[4].classList.remove("active-element")
+    }
+
     },
 
-          setDessert() {
+
+
+    setDessert() {
         this.setter = "dessert";
             this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
     console.log("new", this.piatti2);
@@ -242,6 +272,9 @@ methods: {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+
+    this.elementi[3].classList.add("active-element")
+
     },
 
               setBevande() {
@@ -252,6 +285,9 @@ methods: {
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
+
+    this.elementi[4].classList.add("active-element")
+
     },
 
 }
