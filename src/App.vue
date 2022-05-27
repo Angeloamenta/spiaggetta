@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="overflow-hidden">
     <nav class="navbar-1 d-flex justify-content-center align-items-center p-3">
       <div class="d-flex d-flex justify-content-around align-items-center w-50 h-100">
         <router-link class="rout" to="/" @click.native="changeHome()">Home</router-link>

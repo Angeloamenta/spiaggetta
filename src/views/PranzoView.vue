@@ -5,7 +5,7 @@
           <div class="col-12">Cosa cerchi?</div>
           </div>
           <div class="row mt-3">
-              <div class="col-12 d-flex justify-content-center">
+              <div class="col-12 d-none justify-content-center">
                     <ul class="list-unstyled text-center h-100 d-flex align-items-center row w-75 ">
                         <li class="col-12 col-md elemento" @click="setAll()">Tutto</li>
                         <li class="col-12 col-md elemento" @click="setInsalata()">Insalate</li>
@@ -318,6 +318,8 @@ methods: {
     /* background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.3)), url("../assets/pizzabg-03.png"); */
    
 } 
+
+@import url(../assets/scss/style.scss);
 
 main * {
     position: absolute;

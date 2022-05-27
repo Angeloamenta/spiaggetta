@@ -266,6 +266,7 @@ watch() {
 </script>
 
 <style>
+@import url(../assets/scss/style.scss);
 
   .nav-2 {
     width: 100%;
