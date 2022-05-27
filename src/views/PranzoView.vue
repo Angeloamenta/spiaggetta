@@ -325,7 +325,7 @@ methods: {
       background-color: #00000080;
       border-radius: 25px;
       color: white;
-      padding: 6px 0;
+      padding: 5px 0;
   }
 
 </style>>
