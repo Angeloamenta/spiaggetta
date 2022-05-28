@@ -5,7 +5,7 @@
           <div class="col-12">Cosa cerchi?</div>
           </div>
           <div class="row mt-3">
-              <div class="col-12 d-none justify-content-center">
+              <div class="col-12 d-flex justify-content-center">
                     <ul class="list-unstyled text-center h-100 d-flex align-items-center row w-75 ">
                         <li class="col-12 col-md elemento" @click="setAll()">Tutto</li>
                         <li class="col-12 col-md elemento" @click="setInsalata()">Insalate</li>
