@@ -75,7 +75,108 @@ data() { return {
             condimenti: "salsa di pomodoro, mozzarella, melanzana fritta, ricotta salata, olio",
             prezzo:7.5
         },
-
+        {
+            nome: "Funghi",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro, mozzarella, funghi champignon, olio",
+            prezzo:7
+        },
+        {
+            nome: "Napoletana",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro, mozzarella,olive, capperi, acciughe, basilico, olio",
+            prezzo:7
+        },
+        {
+            nome: "Tonno",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro, mozzarella, tonno, cipolla, olio",
+            prezzo:7
+        },
+        {
+            nome: "Semplice",
+            categoria: "pizza",
+            condimenti: "mozzarella di bufala, datterino in cottura, basilico, olio ",
+            prezzo:7.5
+        },
+        {
+            nome: "Crudaiola",
+            categoria: "pizza",
+            condimenti: "mozzarella fior di latte, crudo, datterino, basilico, olio  (tutto a crudo)*",
+            prezzo:8
+        },
+        {
+            nome: "Chips",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro, mozzarella, wurstel, patatine fritte*,olio",
+            prezzo:8
+        },
+        {
+            nome: "4 Formaggi",
+            categoria: "pizza",
+            condimenti: "mozzarella, gorgonzola, grana, emmental, basilico, olio",
+            prezzo:8.5
+        },
+        {
+            nome: "Bufala",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro, mozzarella di bufala, basilico, olio",
+            prezzo:8
+        },
+        {
+            nome: "4 Stagioni",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro, mozzarella, cotto, funghi, olive, olio",
+            prezzo:8
+        },
+        {
+            nome: "Capricciosa",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro,mozzarella, uovo, piselli, olive, cotto, wurstel, olio",
+            prezzo:8.5
+        },
+        {
+            nome: "Diavola",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro, mozzarella, salame piccante, basilico, olio",
+            prezzo:7
+        },
+        {
+            nome: "Valtellina",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro,mozzarella,bresaola, rucola,grana, olio",
+            prezzo:9.5
+        },
+        {
+            nome: "Parmigiana",
+            categoria: "pizza",
+            condimenti: "salsa di pomodoro, mozzarella, uovo, cotto, melanzana fritta, grana,olio",
+            prezzo:9
+        },
+        {
+            nome: "Speck",
+            categoria: "pizza",
+            condimenti: "mozzarella, radicchio, speck, datterino, olio",
+            prezzo:8.5
+        },
+        {
+            nome: "Grigliata",
+            categoria: "pizza",
+            condimenti: "mozzarella, melanzana arrosto, zucchine arrosto,radicchio, datterino, olio",
+            prezzo:9
+        },
+        {
+            nome: "Pachino",
+            categoria: "pizza",
+            condimenti: "Mozzarella di bufala,prosciutto crudo, datterino, basilico, olio",
+            prezzo:10
+        },
+        {
+            nome: "Gustosa",
+            categoria: "pizza",
+            condimenti: "mozzarella,patate al forno, rosmarino, salsiccia fresca, grana a scaglie, olio",
+            prezzo:9
+        },
         // pizze speciali
 
         {
@@ -90,7 +191,36 @@ data() { return {
             categoria: "pizza speciale",
             condimenti: "mozzarella, crema di carciofi, speck, datterino",
             prezzo:10,
-
+        },
+        {
+            nome: "Bronte",
+            categoria: "pizza speciale",
+            condimenti: "mozzarella, crema di pistacchio, mortadella, burrata, basilico, olio",
+            prezzo:13
+        },
+        {
+            nome: "La Fornace",
+            categoria: "pizza speciale",
+            condimenti: "mozzarella, capocollo di suino nero, datterino, burrata,grana, basilico, olio ",
+            prezzo:13
+        },
+        {
+            nome: "Manza",
+            categoria: "pizza speciale",
+            condimenti: "mozzarella, carpaccio di manzo, rucola, datterino, grana, olio ",
+            prezzo:12
+        },
+        {
+            nome: "Nerano",
+            categoria: "pizza speciale",
+            condimenti: "mozzarella, zucchina fritta, salame di cinghiale, scaglie di grana, pepe nero, olio",
+            prezzo:12
+        },
+        {
+            nome: "Ionica",
+            categoria: "pizza speciale",
+            condimenti: "mozzarella, confettura di fichi, capocollo di suino nero, rucola, datterino, grana, olio",
+            prezzo:13
         },
 
         // pizze di mare
@@ -99,8 +229,26 @@ data() { return {
             nome: "la spiaggetta ",
             categoria: "pizza mare",
             condimenti: "salsa di pomodoro, polipo*, gamberetti*, cozze*,gamberoni*, prezzemolo, olio",
-            prezzo:10,
+            prezzo:16,
             title: "Pizze Di Mare"
+        },
+        {
+            nome: "Sampiruotti",
+            categoria: "pizza mare",
+            condimenti: "zucchina fritta, mozzarella, gamberoni*,prezzemolo, olio",
+            prezzo:14,
+        },
+        {
+            nome: "U puzzu ra za vanna",
+            categoria: "pizza mare",
+            condimenti: "mozzarella, bottarga di tonno grattuggiata, scorza di limone, datterino, menta, olio",
+            prezzo:12,
+        },
+        {
+            nome: "Il molo",
+            categoria: "pizza mare",
+            condimenti: "mozzarella,datterino in cottura, seppie* arrosto, patate al forno, prezzemolo, olio",
+            prezzo:13,
         },
 
         // piatti unici
@@ -112,15 +260,32 @@ data() { return {
             prezzo:13,
             title: "Piatti unici"
         },
+        {
+            nome: "IL CARNIVORO",
+            categoria: "piatti unici",
+            condimenti: "datterino confit, carne salada, mozzarella di bufala, patatine fritte, crostoni, olio evo",
+            prezzo:15,
+            title: "Piatti unici"
+        },
+        {
+            nome: "LA PESCATRICE",
+            categoria: "piatti unici",
+            condimenti: "datterino confit, tartare di salmone, avocado, zucchine grigliate, crostoni, olio evo",
+            prezzo:16,
+            title: "Piatti unici"
+        },
 
         // frigitoria
 
-                {
-            nome: "partatine fritte",
+        {
+            nome: "patatine fritte",
             categoria: "frigitoria",
             prezzo:4,
             title: "Frigitoria"
         },
+
+        // INSERIRE DESSERT
+        
     ]
 
 }
