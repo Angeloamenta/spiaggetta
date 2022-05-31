@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-          <div class="container-fluid">
+          <div class="container-fluid menu-bg">
                 <div class="container-fluid">
           <div v-for="(drink, index) in drinks2" :key="index" class="row mb-4">
               <div v-show="drink.title" class="col-12 text-center text-md-start mt-3 mb-5 title-show">

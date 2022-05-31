@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container-fluid">
+    <div class="container-fluid menu-bg">
       <ul>
           <li>Coperto: 2.5</li>
           <li>Allergeni</li>

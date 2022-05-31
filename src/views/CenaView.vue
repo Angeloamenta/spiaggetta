@@ -17,7 +17,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid menu-bg">
           <div v-for="(piatto, index) in piatti2" :key="index" class="row mb-4">
               <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3 mb-5 title-show">
                     <h1 class="piatto-title" >{{piatto.title}}</h1>
