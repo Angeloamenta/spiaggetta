@@ -1,6 +1,6 @@
 <template>
   <div class="home container-fluid">
-    <div class="row home-row pt-5 pb-5">
+    <div class="row home-row pt-2">
       <div class="col-6 d-flex justify-content-start">
         <div class="row">
           <div class="col-12 logo-container">
@@ -19,33 +19,36 @@
               drink list.
             </p>
           </div>
-          <div class="col">
+          <div class="col d-flex align-items-center flex-column">
             <p class="putia-text m-0">QUESTO MENÙ È STATO CREATO DA:</p>
-            <img src="../assets/logoputia.svg" alt="">
+            <img class="logo-putia" src="../assets/logoputia.svg" alt="">
           </div>
         </div>
       </div>
-          <div class="col-6 d-flex justify-content-start align-items-center mt-5">
+          <div class="col-6 d-flex align-items-center ">
             <div class="row row-menu w-100">
               <div class="col-12 word-container">
                 <h2>M</h2>
-                <img src="../assets/fiore-1.png" alt="">
+                <img class="fiore-1" src="../assets/fiore-1.png" alt="">
               </div>
               <div class="col-12 word-container">
                 <h2>E</h2>
-                <img src="../assets/fiore-2.png" alt="">
+                <img class="fiore-2" src="../assets/fiore-2.png" alt="">
               </div>
               <div class="col-12 word-container">
                 <h2>N</h2>
-                <img src="../assets/fiore-3.png" alt="">
+                <img class="fiore-3" src="../assets/fiore-3.png" alt="">
               </div>
-              <div class="col-12 word-container">
+              <div class="col-12 word-container mb-5">
                 <h2>Ù</h2>
-                <img src="../assets/fiore-4.png" alt="">
+                <img class="fiore-4" src="../assets/fiore-4.png" alt="">
               </div>
-              <div class="col d-flex justify-content-end align-items-center mt-3 social">
-                <img src="../assets/ig.gif" alt="">
-                <img src="../assets/fb.gif" alt="">
+              <div class="col mt-3 social">
+                <div class="border-white"></div>
+                <div class="d-flex justify-content-end align-items-center">
+                  <img src="../assets/ig.gif" alt="">
+                  <img src="../assets/fb.gif" alt="">
+                </div>
               </div>
             </div>
             
@@ -121,12 +124,12 @@ export default {
 }
 
 .row-menu img {
-  width: 120px;
+  width: 110px;
 }
 
 .word-container {
   position: relative;
-  height: 120px;
+  height: 100px;
 }
 
 .word-container *{
@@ -136,13 +139,47 @@ export default {
 }
 
 .word-container h2 {
-  font-size: 132px;
+  font-size: 130px;
   font-family: 'DM Serif Display', serif;
   z-index: 1;
 }
 
+.social {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
 .social img {
   width: 50px;
+}
+
+.border-white {
+  height: 5px;
+  width: 60%;
+  background-color: white;
+  align-self: end;
+  margin-bottom: 10px;
+}
+
+.fiore-1 {
+  left: 72%;
+}
+
+.fiore-2 {
+  left: 13%;
+}
+
+.fiore-3 {
+  left: 80%;
+}
+
+.fiore-4 {
+  left: 25%;
+}
+
+.logo-putia {
+  width: 130px;
 }
 
 </style>
