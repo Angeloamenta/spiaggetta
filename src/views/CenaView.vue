@@ -19,8 +19,9 @@
       </div>
       <div class="container-fluid">
           <div v-for="(piatto, index) in piatti2" :key="index" class="row mb-4">
-              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3 mb-5">
-                    <h1>{{piatto.title}}</h1>
+              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3 mb-5 title-show">
+                    <h1 class="piatto-title" >{{piatto.title}}</h1>
+                    <div class="line-cena"></div>
               </div>
               <div class="col-12 col-md-4 d-flex justify-content-between">
                     <h3 class="title-name">{{piatto.nome}}</h3>
@@ -462,6 +463,18 @@ watch() {
 
     .nav-cena {
     background-color: #e13d3d;
+  }
+
+      .title-show {
+        display: flex;
+  flex-direction: column;
+  }
+
+  .line-cena {
+      width: 50%;
+      height: 3px;
+      align-self: center;
+      background-color: #e13d3d;
   }
 
 </style>

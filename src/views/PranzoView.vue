@@ -15,10 +15,11 @@
               </div>
           </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid menu-bg">
           <div v-for="(piatto, index) in piatti2" :key="index" class="row mb-4">
-              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3 mb-5">
-                    <h1>{{piatto.title}}</h1>
+              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3 mb-5 title-show">
+                    <h1 class="piatto-title" >{{piatto.title}}</h1>
+                    <div class="line-pranzo"></div>
               </div>
               <div class="col-12 col-md-4 d-flex justify-content-between">
                     <h3 class="title-name">{{piatto.nome}}</h3>
@@ -273,6 +274,10 @@ main * {
     position: absolute;
 }
 
+.menu-bg{
+    background-color: #fdfcf7;
+}
+
  .nav-2 {
     width: 100%;
     text-align: center;
@@ -290,6 +295,18 @@ main * {
       border-radius: 25px;
       color: white;
       padding: 5px 0;
+  }
+
+  .title-show {
+        display: flex;
+  flex-direction: column;
+  }
+
+  .line-pranzo {
+      width: 50%;
+      height: 3px;
+      align-self: center;
+      background-color: #ef9206;
   }
 
 </style>>
