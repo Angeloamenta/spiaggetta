@@ -20,8 +20,8 @@
             </p>
           </div>
           <div class="col">
-            <p class="putia-text">QUESTO MENÙ È STATO CREATO DA:</p>
-            <h2>A</h2>
+            <p class="putia-text m-0">QUESTO MENÙ È STATO CREATO DA:</p>
+            <img src="../assets/logoputia.svg" alt="">
           </div>
         </div>
       </div>
