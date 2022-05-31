@@ -15,23 +15,19 @@
               </div>
           </div>
       </div>
-            <div class="container-fluid">
-          <div v-for="(piatto, index) in piatti2" :key="index" class="row">
-              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3">
+      <div class="container-fluid">
+          <div v-for="(piatto, index) in piatti2" :key="index" class="row mb-4">
+              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3 mb-5">
                     <h1>{{piatto.title}}</h1>
               </div>
-              <div class="col-12 col-md-4">
-                    <h3>{{piatto.nome}}</h3>
+              <div class="col-12 col-md-4 d-flex justify-content-between">
+                    <h3 class="title-name">{{piatto.nome}}</h3>
+                    <h3 class="price"> € {{piatto.prezzo}}</h3>
               </div>
               <div class="col-12 col-md-4 ">
-                        <h5 v-if="piatto.condimenti == null"></h5>
-                        <h5 v-else>Condimenti</h5>
-                        <div>
-                            <p>{{piatto.condimenti}}</p>
-                        </div>
-              </div>
-              <div class="col-12 col-md-4 mb-4">
-                        <div>€ {{piatto.prezzo}}</div>
+                        <!-- <h5 v-if="piatto.condimenti == null"></h5>
+                        <h5 v-else>Condimenti</h5> -->
+                        <p class="condimenti">{{piatto.condimenti}}</p>
               </div>
           </div>
       </div>

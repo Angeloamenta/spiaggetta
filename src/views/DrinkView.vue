@@ -21,22 +21,22 @@
         </div>
     </div>
           <div class="container-fluid">
-          <div v-for="(drink, index) in drinks2" :key="index" class="row">
-              <div v-show="drink.title" class="col-12 text-center text-md-start mt-4 mb-4">
+                <div class="container-fluid">
+          <div v-for="(drink, index) in drinks2" :key="index" class="row mb-4">
+              <div v-show="drink.title" class="col-12 text-center text-md-start mt-3 mb-5">
                     <h1>{{drink.title}}</h1>
               </div>
-              <div class="col-12 col-md-4 ">
-                    <h3>{{drink.nome}}</h3>
+              <div class="col-12 col-md-4 d-flex justify-content-between">
+                    <h3 class="title-name">{{drink.nome}}</h3>
+                    <h3 class="price"> € {{drink.prezzo}}</h3>
               </div>
               <div class="col-12 col-md-4 ">
-                        <h5 v-if="drink.condimenti == null"></h5>
-                        <h5 v-else>Ingredienti</h5>
-                        <p>{{drink.condimenti}}</p>
-              </div>
-              <div class="col-12 col-md-4 mb-4">
-                        <div>€ {{drink.prezzo}}</div>
+                        <!-- <h5 v-if="drink.condimenti == null"></h5>
+                        <h5 v-else>Condimenti</h5> -->
+                        <p class="condimenti">{{drink.condimenti}}</p>
               </div>
           </div>
+      </div>
       </div>
           <PreFooter class="prefooter"/>
 </div>
