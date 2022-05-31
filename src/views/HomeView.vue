@@ -10,7 +10,7 @@
           <div class="col welcome-container">
             <p class="welcome">
               Ti diamo il benvenuto <br>
-               a <a href="">@la_spiaggetta_21</a>, <br>
+               a la_spiaggetta_21, <br>
               gustati la nostra <br>
               atmosfera conviviale, <br>
               i nostri piatti e le <br>
@@ -46,8 +46,8 @@
               <div class="col mt-3 social">
                 <div class="border-white"></div>
                 <div class="d-flex justify-content-end align-items-center">
-                  <img src="../assets/ig.gif" alt="">
-                  <img src="../assets/fb.gif" alt="">
+                  <a href="https://www.instagram.com/la_spiaggetta_21/" target="_blank"><img src="../assets/ig.gif" alt=""></a>
+                  <a class="mx-2" href="https://www.facebook.com/Laspiaggetta.21" target="_blank"><img src="../assets/fb.gif" alt=""></a>
                 </div>
               </div>
             </div>
@@ -94,9 +94,9 @@ export default {
 
 .logo-spiaggetta {
   position: absolute;
-  top: 35px;
-  left: 20px;
-  height: 50px;
+    top: 35px;
+    left: 19px;
+    height: 46px;
 }
 
 .logo-cuore {
@@ -156,7 +156,7 @@ export default {
 
 .border-white {
   height: 5px;
-  width: 60%;
+  width: 80%;
   background-color: white;
   align-self: end;
   margin-bottom: 10px;
