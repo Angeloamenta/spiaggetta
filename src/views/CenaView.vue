@@ -263,14 +263,12 @@ data() { return {
             categoria: "piatti unici",
             condimenti: "datterino confit, carne salada, mozzarella di bufala, patatine fritte, crostoni, olio evo",
             prezzo:15,
-            title: "Piatti unici"
         },
         {
             nome: "LA PESCATRICE",
             categoria: "piatti unici",
             condimenti: "datterino confit, tartare di salmone, avocado, zucchine grigliate, crostoni, olio evo",
             prezzo:16,
-            title: "Piatti unici"
         },
 
         // frigitoria
