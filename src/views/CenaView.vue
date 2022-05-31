@@ -18,20 +18,18 @@
         </div>
       </div>
       <div class="container-fluid">
-          <div v-for="(piatto, index) in piatti2" :key="index" class="row">
-              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3">
+          <div v-for="(piatto, index) in piatti2" :key="index" class="row mb-4">
+              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3 mb-5">
                     <h1>{{piatto.title}}</h1>
               </div>
-              <div class="col-12 col-md-4">
-                    <h3>{{piatto.nome}}</h3>
+              <div class="col-12 col-md-4 d-flex justify-content-between">
+                    <h3 class="title-name">{{piatto.nome}}</h3>
+                    <h3 class="price"> € {{piatto.prezzo}}</h3>
               </div>
               <div class="col-12 col-md-4 ">
-                        <h5 v-if="piatto.condimenti == null"></h5>
-                        <h5 v-else>Condimenti</h5>
-                        <p>{{piatto.condimenti}}</p>
-              </div>
-              <div class="col-12 col-md-4 mb-4">
-                        <div>€ {{piatto.prezzo}}</div>
+                        <!-- <h5 v-if="piatto.condimenti == null"></h5>
+                        <h5 v-else>Condimenti</h5> -->
+                        <p class="condimenti">{{piatto.condimenti}}</p>
               </div>
           </div>
       </div>
@@ -59,7 +57,7 @@ data() { return {
         {
             nome: "Biancaneve",
             categoria: "pizza",
-            condimenti: "mozzarella, olio",
+            condimenti: "mozzarella, olio evo",
             prezzo:5,
             title: "Pizze Classiche"
         },
@@ -72,109 +70,109 @@ data() { return {
         {
             nome: "Norma",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, melanzana fritta, ricotta salata, olio",
+            condimenti: "salsa di pomodoro, mozzarella, melanzana fritta, ricotta salata, olio evo",
             prezzo:7.5
         },
         {
             nome: "Funghi",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, funghi champignon, olio",
+            condimenti: "salsa di pomodoro, mozzarella, funghi champignon, olio evo",
             prezzo:7
         },
         {
             nome: "Napoletana",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella,olive, capperi, acciughe, basilico, olio",
+            condimenti: "salsa di pomodoro, mozzarella,olive, capperi, acciughe, basilico, olio evo",
             prezzo:7
         },
         {
             nome: "Tonno",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, tonno, cipolla, olio",
+            condimenti: "salsa di pomodoro, mozzarella, tonno, cipolla, olio evo",
             prezzo:7
         },
         {
             nome: "Semplice",
             categoria: "pizza",
-            condimenti: "mozzarella di bufala, datterino in cottura, basilico, olio ",
+            condimenti: "mozzarella di bufala, datterino in cottura, basilico, olio evo ",
             prezzo:7.5
         },
         {
             nome: "Crudaiola",
             categoria: "pizza",
-            condimenti: "mozzarella fior di latte, crudo, datterino, basilico, olio  (tutto a crudo)*",
+            condimenti: "mozzarella fior di latte, crudo, datterino, basilico, olio evo  (tutto a crudo)*",
             prezzo:8
         },
         {
             nome: "Chips",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, wurstel, patatine fritte*,olio",
+            condimenti: "salsa di pomodoro, mozzarella, wurstel, patatine fritte*,olio evo",
             prezzo:8
         },
         {
             nome: "4 Formaggi",
             categoria: "pizza",
-            condimenti: "mozzarella, gorgonzola, grana, emmental, basilico, olio",
+            condimenti: "mozzarella, gorgonzola, grana, emmental, basilico, olio evo",
             prezzo:8.5
         },
         {
             nome: "Bufala",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella di bufala, basilico, olio",
+            condimenti: "salsa di pomodoro, mozzarella di bufala, basilico, olio evo",
             prezzo:8
         },
         {
             nome: "4 Stagioni",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, cotto, funghi, olive, olio",
+            condimenti: "salsa di pomodoro, mozzarella, cotto, funghi, olive, olio evo",
             prezzo:8
         },
         {
             nome: "Capricciosa",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro,mozzarella, uovo, piselli, olive, cotto, wurstel, olio",
+            condimenti: "salsa di pomodoro,mozzarella, uovo, piselli, olive, cotto, wurstel, olio evo",
             prezzo:8.5
         },
         {
             nome: "Diavola",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, salame piccante, basilico, olio",
+            condimenti: "salsa di pomodoro, mozzarella, salame piccante, basilico, olio evo",
             prezzo:7
         },
         {
             nome: "Valtellina",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro,mozzarella,bresaola, rucola,grana, olio",
+            condimenti: "salsa di pomodoro,mozzarella,bresaola, rucola,grana, olio evo",
             prezzo:9.5
         },
         {
             nome: "Parmigiana",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, uovo, cotto, melanzana fritta, grana,olio",
+            condimenti: "salsa di pomodoro, mozzarella, uovo, cotto, melanzana fritta, grana,olio evo",
             prezzo:9
         },
         {
             nome: "Speck",
             categoria: "pizza",
-            condimenti: "mozzarella, radicchio, speck, datterino, olio",
+            condimenti: "mozzarella, radicchio, speck, datterino, olio evo",
             prezzo:8.5
         },
         {
             nome: "Grigliata",
             categoria: "pizza",
-            condimenti: "mozzarella, melanzana arrosto, zucchine arrosto,radicchio, datterino, olio",
+            condimenti: "mozzarella, melanzana arrosto, zucchine arrosto,radicchio, datterino, olio evo",
             prezzo:9
         },
         {
             nome: "Pachino",
             categoria: "pizza",
-            condimenti: "Mozzarella di bufala,prosciutto crudo, datterino, basilico, olio",
+            condimenti: "Mozzarella di bufala,prosciutto crudo, datterino, basilico, olio evo",
             prezzo:10
         },
         {
             nome: "Gustosa",
             categoria: "pizza",
-            condimenti: "mozzarella,patate al forno, rosmarino, salsiccia fresca, grana a scaglie, olio",
+            condimenti: "mozzarella,patate al forno, rosmarino, salsiccia fresca, grana a scaglie, olio evo",
             prezzo:9
         },
         // pizze speciali
@@ -182,7 +180,7 @@ data() { return {
         {
             nome: "sapori siculi ",
             categoria: "pizza speciale",
-            condimenti: "salsa di pomodoro, mozzarella, salsiccia fresca, finocchietto selvatico, mollica condita, olio",
+            condimenti: "salsa di pomodoro, mozzarella, salsiccia fresca, finocchietto selvatico, mollica condita, olio evo",
             prezzo:10,
             title: "Pizze Speciali"
         },
@@ -195,31 +193,31 @@ data() { return {
         {
             nome: "Bronte",
             categoria: "pizza speciale",
-            condimenti: "mozzarella, crema di pistacchio, mortadella, burrata, basilico, olio",
+            condimenti: "mozzarella, crema di pistacchio, mortadella, burrata, basilico, olio evo",
             prezzo:13
         },
         {
             nome: "La Fornace",
             categoria: "pizza speciale",
-            condimenti: "mozzarella, capocollo di suino nero, datterino, burrata,grana, basilico, olio ",
+            condimenti: "mozzarella, capocollo di suino nero, datterino, burrata,grana, basilico, olio evo ",
             prezzo:13
         },
         {
             nome: "Manza",
             categoria: "pizza speciale",
-            condimenti: "mozzarella, carpaccio di manzo, rucola, datterino, grana, olio ",
+            condimenti: "mozzarella, carpaccio di manzo, rucola, datterino, grana, olio evo ",
             prezzo:12
         },
         {
             nome: "Nerano",
             categoria: "pizza speciale",
-            condimenti: "mozzarella, zucchina fritta, salame di cinghiale, scaglie di grana, pepe nero, olio",
+            condimenti: "mozzarella, zucchina fritta, salame di cinghiale, scaglie di grana, pepe nero, olio evo",
             prezzo:12
         },
         {
             nome: "Ionica",
             categoria: "pizza speciale",
-            condimenti: "mozzarella, confettura di fichi, capocollo di suino nero, rucola, datterino, grana, olio",
+            condimenti: "mozzarella, confettura di fichi, capocollo di suino nero, rucola, datterino, grana, olio evo",
             prezzo:13
         },
 
@@ -228,26 +226,26 @@ data() { return {
         {
             nome: "la spiaggetta ",
             categoria: "pizza mare",
-            condimenti: "salsa di pomodoro, polipo*, gamberetti*, cozze*,gamberoni*, prezzemolo, olio",
+            condimenti: "salsa di pomodoro, polipo*, gamberetti*, cozze*,gamberoni*, prezzemolo, olio evo",
             prezzo:16,
             title: "Pizze Di Mare"
         },
         {
             nome: "Sampiruotti",
             categoria: "pizza mare",
-            condimenti: "zucchina fritta, mozzarella, gamberoni*,prezzemolo, olio",
+            condimenti: "zucchina fritta, mozzarella, gamberoni*,prezzemolo, olio evo",
             prezzo:14,
         },
         {
             nome: "U puzzu ra za vanna",
             categoria: "pizza mare",
-            condimenti: "mozzarella, bottarga di tonno grattuggiata, scorza di limone, datterino, menta, olio",
+            condimenti: "mozzarella, bottarga di tonno grattuggiata, scorza di limone, datterino, menta, olio evo",
             prezzo:12,
         },
         {
             nome: "Il molo",
             categoria: "pizza mare",
-            condimenti: "mozzarella,datterino in cottura, seppie* arrosto, patate al forno, prezzemolo, olio",
+            condimenti: "mozzarella,datterino in cottura, seppie* arrosto, patate al forno, prezzemolo, olio evo",
             prezzo:13,
         },
 
@@ -285,6 +283,28 @@ data() { return {
         },
 
         // INSERIRE DESSERT
+
+        {
+            nome: "semifreddo “croccante al pistacchio”",
+            categoria: "dessert",
+            prezzo:7,
+            title: "Dessert"
+        },
+        {
+            nome: "geometrie di cioccolato e pere”",
+            categoria: "dessert",
+            prezzo:7,
+        },
+        {
+            nome: "semifreddo “croccante alla mandorla”",
+            categoria: "dessert",
+            prezzo:6,
+        },
+        {
+            nome: "semifreddo “agrumi di sicilia”",
+            categoria: "dessert",
+            prezzo:6,
+        },
         
     ]
 
@@ -433,11 +453,12 @@ watch() {
 <style>
 @import url(../assets/scss/style.scss);
 
+
   .nav-2 {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-        color: white;
+    color: white;
     font-weight: 700;
   }
 

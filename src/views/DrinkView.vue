@@ -94,16 +94,88 @@ data() { return {
         // drink classici
 
         {
-            nome: "Negroni",
+            nome: "NEGRONI",
             categoria: "classici",
             condimenti: "(bitter campari, vermouth rosso, gin)",
             prezzo: 6,
             title: "Drink Classici"
         },
         {
-            nome: "Americano",
+            nome: "AMERICANO",
             categoria: "classici",
             condimenti: "(bitter campari, vermouth rosso, soda)",
+            prezzo: 6,
+        },
+        {
+            nome: "MI-TO",
+            categoria: "classici",
+            condimenti: "(bitter campari, vermouth rosso)",
+            prezzo: 6,
+        },
+        {
+            nome: "APEROL SPRITZ",
+            categoria: "classici",
+            condimenti: "(aperol, prosecco, soda)",
+            prezzo: 6,
+        },
+        {
+            nome: "CAMPARI SPRITZ",
+            categoria: "classici",
+            condimenti: "(bitter campari, prosecco,soda)",
+            prezzo: 6,
+        },
+        {
+            nome: "HUGO SPRITZ",
+            categoria: "classici",
+            condimenti: "( St.germain, prosecco, menta)",
+            prezzo: 7,
+        },
+        {
+            nome: "MOSCOW MULE",
+            categoria: "classici",
+            condimenti: "(lime,vodka, ginger beer)",
+            prezzo: 6,
+        },
+        {
+            nome: "MARGARITA",
+            categoria: "classici",
+            condimenti: "(tequila, triple sec, lime, sale)",
+            prezzo: 6,
+        },
+        {
+            nome: "LONG ISLAND ICE TEA",
+            categoria: "classici",
+            condimenti: "(gin,vodka, rum blanco, tequila, lime, coca cola)",
+            prezzo: 6,
+        },
+        {
+            nome: "MOJITO ORIGINAL",
+            categoria: "classici",
+            condimenti: "(zucchero, lime,menta,rum blanco, soda)",
+            prezzo: 6,
+        },
+        {
+            nome: "MANHATTAN",
+            categoria: "classici",
+            condimenti: "(rye whisky, vermouth rosso, angostura)",
+            prezzo: 6,
+        },
+        {
+            nome: "OLD FASHIONED",
+            categoria: "classici",
+            condimenti: "(bourbon whisky, zolletta di zucchero, angostura, soda)",
+            prezzo: 6,
+        },
+        {
+            nome: "DAIQUIRI",
+            categoria: "classici",
+            condimenti: "(zucchero,lime,rum anejo)",
+            prezzo: 6,
+        },
+        {
+            nome: "GIMLET",
+            categoria: "classici",
+            condimenti: "(zucchero, cordial lime,gin)",
             prezzo: 6,
         },
 
@@ -115,6 +187,130 @@ data() { return {
             prezzo: 3,
             title: "Bevande"
         },
+        {
+            nome: "Cere’s 33 cl",
+            categoria: "bevande",
+            prezzo: 4,
+        },
+        {
+            nome: "Menabrea 33cl",
+            categoria: "bevande",
+            prezzo: 3,
+        },
+        {
+            nome: "menabrea strong 33cl",
+            categoria: "bevande",
+            prezzo: 4,
+        },
+        {
+            nome: "coca cola 33cl",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "fanta 33cl",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "bevande polara 33cl",
+            categoria: "bevande",
+            prezzo: 2,
+        },
+        {
+            nome: "acqua naturale 0,75cl",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "acqua frizzante 0,75cl",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "coca cola 1lt",
+            categoria: "bevande",
+            prezzo: 4.5,
+        },
+        {
+            nome: "spina piccola 0,2cl",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "spina media 0,4cl",
+            categoria: "bevande",
+            prezzo: 4.5,
+        },
+        {
+            nome: "spina caraffa 1lt",
+            categoria: "bevande",
+            prezzo: 10,
+        },
+        {
+            nome: "birra n’artigiana oro cl 33",
+            categoria: "bevande",
+            prezzo: 6,
+        },
+        {
+            nome: "birra n’artigiana rossa cl 33",
+            categoria: "bevande",
+            prezzo: 6,
+        },
+        {
+            nome: "birra n’artigiana ambrata cl 33",
+            categoria: "bevande",
+            prezzo: 6,
+        },
+
+            // bevande pranzo
+
+        {
+            nome: "acqua naturale 0,5cl",
+            categoria: "bevande",
+            prezzo: 1,
+        },
+        {
+            nome: "acqua frizzante 0,5cl",
+            categoria: "bevande",
+            prezzo: 1,
+
+        },
+        {
+            nome: "succo di frutta ace, pesca, ananas",
+            categoria: "bevande",
+            prezzo: 2,
+        },
+        {
+            nome: "the pesca, limone, ananas",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "coca cola 33cl",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "Fanta 33cl",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "acqua tonica san pellegrino",
+            categoria: "bevande",
+            prezzo: 2.5,
+        },
+        {
+            nome: "crodino",
+            categoria: "bevande",
+            prezzo: 3,
+        },
+        {
+            nome: "campari soda",
+            categoria: "bevande",
+            prezzo: 3,
+        },
 
         // amari
 
@@ -123,6 +319,41 @@ data() { return {
             categoria: "amari",
             prezzo: 3,
             title: "Amari"
+        },
+        {
+            nome: "amaro montenegro",
+            categoria: "amari",
+            prezzo: 3,
+        },
+        {
+            nome: "amaro unnimaffissu",
+            categoria: "amari",
+            prezzo: 3,
+        },
+        {
+            nome: "unicum",
+            categoria: "amari",
+            prezzo: 3,
+        },
+        {
+            nome: "jeghermaister",
+            categoria: "amari",
+            prezzo: 3,
+        },
+        {
+            nome: "limoncello",
+            categoria: "amari",
+            prezzo: 3,
+        },
+        {
+            nome: "sambuca",
+            categoria: "amari",
+            prezzo: 3,
+        },
+        {
+            nome: "liquore chinotto",
+            categoria: "amari",
+            prezzo: 4,
         },
 
         // distillati
@@ -133,6 +364,42 @@ data() { return {
             prezzo: 3,
             title: "Distillati"
         },
+        {
+            nome: "grappa bianca",
+            categoria: "distillati",
+            prezzo: 3,
+        },
+        {
+            nome: "cognac hennessy",
+            categoria: "distillati",
+            prezzo: 6,
+        },
+        {
+            nome: "whisky talisker",
+            categoria: "distillati",
+            prezzo: 8,
+        },
+        {
+            nome: "whisky oban",
+            categoria: "distillati",
+            prezzo: 8,
+        },
+        {
+            nome: "rum pampero anejo",
+            categoria: "distillati",
+            prezzo: 8,
+        },
+        {
+            nome: "tequila blanca",
+            categoria: "distillati",
+            prezzo: 4,
+        },
+        {
+            nome: "tequila ambrata",
+            categoria: "distillati",
+            prezzo: 4,
+        },
+        
 
         // gin
 
@@ -142,6 +409,47 @@ data() { return {
             prezzo: 6,
             title: "Gin"
         },
+        {
+            nome: "gin mare",
+            categoria: "gin",
+            prezzo: 7,
+        },
+        {
+            nome: "hendrick’s",
+            categoria: "gin",
+            prezzo: 7,
+        },
+        {
+            nome: "etneum",
+            categoria: "gin",
+            prezzo: 8,
+        },
+        {
+            nome: "mandala gin",
+            categoria: "gin",
+            prezzo: 8,
+        },
+        {
+            nome: "old school gin",
+            categoria: "gin",
+            prezzo: 8,
+        },
+        {
+            nome: "The baskerville gin",
+            categoria: "gin",
+            prezzo: 8,
+        },
+        {
+            nome: "favignana gin",
+            categoria: "gin",
+            prezzo: 8,
+        },
+        {
+            nome: "satra",
+            categoria: "gin",
+            prezzo: 8,
+        },
+
         
     ]
 
