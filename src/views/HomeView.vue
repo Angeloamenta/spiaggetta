@@ -4,11 +4,24 @@
       <div class="col-6 d-flex justify-content-start">
         <div class="row">
           <div class="col-12 logo-container">
-              <img class="logo-spiaggetta" src="../assets/spiaggettalogo.svg" alt="">
+              <img class="logo-spiaggetta" src="../assets/spiaggetta.svg" alt="">
               <img class="logo-cuore" src="../assets/cuore spiaggetta.gif" alt="">
           </div>
+          <div class="col welcome-container">
+            <p class="welcome">
+              Ti diamo il benvenuto <br>
+               a <a href="">@la_spiaggetta_21</a>, <br>
+              gustati la nostra <br>
+              atmosfera conviviale, <br>
+              i nostri piatti e le <br>
+              nostre pizze e viaggia <br>
+              con la nostra nuova <br>
+              drink list.
+            </p>
+          </div>
           <div class="col">
-            boh
+            <p class="putia-text">QUESTO MENÙ È STATO CREATO DA:</p>
+            <h2>A</h2>
           </div>
         </div>
       </div>
@@ -30,7 +43,12 @@
                 <h2>Ù</h2>
                 <img src="../assets/fiore-4.png" alt="">
               </div>
+              <div class="col d-flex justify-content-end align-items-center mt-3 social">
+                <img src="../assets/ig.gif" alt="">
+                <img src="../assets/fb.gif" alt="">
+              </div>
             </div>
+            
           </div>
     </div>
 
@@ -86,6 +104,22 @@ export default {
 
 }
 
+.welcome-container {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+}
+
+.welcome {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+.putia-text {
+  font-size: 9px;
+  font-family: 'Lato', sans-serif;
+}
+
 .row-menu img {
   width: 120px;
 }
@@ -102,8 +136,13 @@ export default {
 }
 
 .word-container h2 {
-  font-size: 100px;
+  font-size: 132px;
+  font-family: 'DM Serif Display', serif;
   z-index: 1;
+}
+
+.social img {
+  width: 50px;
 }
 
 </style>
