@@ -12,7 +12,7 @@
                 <li class="col-12 col-md elemento " @click="setPizzeSpeciali()">Pizze Speciali</li>
                 <li class="col-12 col-md elemento " @click="setPizzeMare()">Pizze di Mare</li>
                 <li class="col-12 col-md elemento " @click="setPiattiUnici()">Piatti Unici</li>
-                <li class="col-12 col-md elemento " @click="setFrigitoria()">Frigitoria</li>
+                <li class="col-12 col-md elemento " @click="setFriggitoria()">Friggitoria</li>
             </ul>
           </div>
         </div>
@@ -65,7 +65,7 @@ data() { return {
         {
             nome: "Margherita",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, basilico,olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, basilico, olio evo",
             prezzo:6
         },
         {
@@ -83,7 +83,7 @@ data() { return {
         {
             nome: "Napoletana",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella,olive, capperi, acciughe, basilico, olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, olive, capperi, acciughe, basilico, olio evo",
             prezzo:7
         },
         {
@@ -101,13 +101,13 @@ data() { return {
         {
             nome: "Crudaiola",
             categoria: "pizza",
-            condimenti: "mozzarella fior di latte, crudo, datterino, basilico, olio evo  (tutto a crudo)*",
+            condimenti: "mozzarella fior di latte, crudo, datterino, basilico, olio evo (tutto a crudo)*",
             prezzo:8
         },
         {
             nome: "Chips",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, wurstel, patatine fritte*,olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, wurstel, patatine fritte*, olio evo",
             prezzo:8
         },
         {
@@ -131,7 +131,7 @@ data() { return {
         {
             nome: "Capricciosa",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro,mozzarella, uovo, piselli, olive, cotto, wurstel, olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, uovo, piselli, olive, cotto, wurstel, olio evo",
             prezzo:8.5
         },
         {
@@ -143,13 +143,13 @@ data() { return {
         {
             nome: "Valtellina",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro,mozzarella,bresaola, rucola,grana, olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, bresaola, rucola,grana, olio evo",
             prezzo:9.5
         },
         {
             nome: "Parmigiana",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, uovo, cotto, melanzana fritta, grana,olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, uovo, cotto, melanzana fritta, grana, olio evo",
             prezzo:9
         },
         {
@@ -161,19 +161,19 @@ data() { return {
         {
             nome: "Grigliata",
             categoria: "pizza",
-            condimenti: "mozzarella, melanzana arrosto, zucchine arrosto,radicchio, datterino, olio evo",
+            condimenti: "mozzarella, melanzana arrosto, zucchine arrosto, radicchio, datterino, olio evo",
             prezzo:9
         },
         {
             nome: "Pachino",
             categoria: "pizza",
-            condimenti: "Mozzarella di bufala,prosciutto crudo, datterino, basilico, olio evo",
+            condimenti: "Mozzarella di bufala, prosciutto crudo, datterino, basilico, olio evo",
             prezzo:10
         },
         {
             nome: "Gustosa",
             categoria: "pizza",
-            condimenti: "mozzarella,patate al forno, rosmarino, salsiccia fresca, grana a scaglie, olio evo",
+            condimenti: "mozzarella, patate al forno, rosmarino, salsiccia fresca, grana a scaglie, olio evo",
             prezzo:9
         },
         // pizze speciali
@@ -227,14 +227,14 @@ data() { return {
         {
             nome: "la spiaggetta ",
             categoria: "pizza mare",
-            condimenti: "salsa di pomodoro, polipo*, gamberetti*, cozze*,gamberoni*, prezzemolo, olio evo",
+            condimenti: "salsa di pomodoro, polipo*, gamberetti*, cozze*, gamberoni*, prezzemolo, olio evo",
             prezzo:16,
             title: "Pizze Di Mare"
         },
         {
             nome: "Sampiruotti",
             categoria: "pizza mare",
-            condimenti: "zucchina fritta, mozzarella, gamberoni*,prezzemolo, olio evo",
+            condimenti: "zucchina fritta, mozzarella, gamberoni*, prezzemolo, olio evo",
             prezzo:14,
         },
         {
@@ -246,7 +246,7 @@ data() { return {
         {
             nome: "Il molo",
             categoria: "pizza mare",
-            condimenti: "mozzarella,datterino in cottura, seppie* arrosto, patate al forno, prezzemolo, olio evo",
+            condimenti: "mozzarella, datterino in cottura, seppie* arrosto, patate al forno, prezzemolo, olio evo",
             prezzo:13,
         },
 
@@ -276,9 +276,9 @@ data() { return {
 
         {
             nome: "patatine fritte",
-            categoria: "frigitoria",
+            categoria: "friggitoria",
             prezzo:4,
-            title: "Frigitoria"
+            title: "Friggitoria"
         },
 
         // INSERIRE DESSERT
@@ -422,8 +422,8 @@ methods: {
     }
     },
 
-     setFrigitoria() {
-        this.setter = "frigitoria";
+     setFriggitoria() {
+        this.setter = "friggitoria";
             this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
     console.log("new", this.piatti2);
     

@@ -152,7 +152,7 @@ data() { return {
         {
             nome: "MOJITO ORIGINAL",
             categoria: "classici",
-            condimenti: "(zucchero, lime,menta,rum blanco, soda)",
+            condimenti: "(zucchero, lime,menta, rum blanco, soda)",
             prezzo: 6,
         },
         {
@@ -170,13 +170,13 @@ data() { return {
         {
             nome: "DAIQUIRI",
             categoria: "classici",
-            condimenti: "(zucchero,lime,rum anejo)",
+            condimenti: "(zucchero, lime, rum anejo)",
             prezzo: 6,
         },
         {
             nome: "GIMLET",
             categoria: "classici",
-            condimenti: "(zucchero, cordial lime,gin)",
+            condimenti: "(zucchero, cordial lime, gin)",
             prezzo: 6,
         },
 
