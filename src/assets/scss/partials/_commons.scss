@@ -56,6 +56,14 @@
     
   }
 
+.piatto-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 23px;
+  letter-spacing: 3.68px;
+  color: #2f3a2b;
+  text-transform: uppercase;
+}
+
   h1 {
     margin-bottom: 15px;
     margin-top: 15px;
@@ -67,20 +75,24 @@
 
 
   .title-name{
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    color: black;
     width: 70%;
     text-transform: uppercase;
 
 }
 .price{
-    font-size: 20px;
-    font-weight: 700;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: black;
 }
 
 .condimenti{
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 17.5px;
+    color: #444444;
 }
 
   
