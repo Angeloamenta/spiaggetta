@@ -26,7 +26,7 @@
         </div>
       </div>
           <div class="col-6 d-flex align-items-center justify-content-sm-center ">
-            <div class="row row-menu w-none w-100">
+            <div class="row row-menu w-100">
               <div class="col-12 word-container">
                 <h2>M</h2>
                 <img class="fiore-1" src="../assets/fiore-1.png" alt="">
