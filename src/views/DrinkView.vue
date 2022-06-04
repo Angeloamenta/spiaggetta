@@ -23,11 +23,11 @@
           <div class="container-fluid menu-bg">
                 <div class="container-fluid">
           <div v-for="(drink, index) in drinks2" :key="index" class="row mb-4">
-              <div v-show="drink.title" class="col-12 text-center text-md-start mt-3 mb-5 title-show">
+              <div v-show="drink.title" class="col-12 text-center mt-3 mb-5 title-show">
                     <h1 class="piatto-title">{{drink.title}}</h1>
                     <div class="line-drink"></div>
               </div>
-              <div class="col-12 col-md-4 d-flex justify-content-between">
+              <div class="col-12 d-flex justify-content-between">
                     <h3 class="title-name">{{drink.nome}}</h3>
                     <h3 class="price"> € {{drink.prezzo}}</h3>
               </div>

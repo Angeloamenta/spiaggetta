@@ -19,11 +19,11 @@
       </div>
       <div class="container-fluid menu-bg">
           <div v-for="(piatto, index) in piatti2" :key="index" class="row mb-4">
-              <div v-show="piatto.title" class="col-12 text-center text-md-start mt-3 mb-5 title-show">
+              <div v-show="piatto.title" class="col-12 text-center mt-3 mb-5 title-show">
                     <h1 class="piatto-title" >{{piatto.title}}</h1>
                     <div class="line-cena"></div>
               </div>
-              <div class="col-12 col-md-4 d-flex justify-content-between">
+              <div class="col-12 d-flex justify-content-between">
                     <h3 class="title-name">{{piatto.nome}}</h3>
                     <h3 class="price"> € {{piatto.prezzo}}</h3>
               </div>

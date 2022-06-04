@@ -7,26 +7,26 @@
               <img class="logo-spiaggetta" src="../assets/spiaggetta.svg" alt="">
               <img class="logo-cuore" src="../assets/cuore spiaggetta.gif" alt="">
           </div>
-          <div class="col welcome-container">
+          <div class="col-12 welcome-container">
             <p class="welcome">
-              Ti diamo il benvenuto <br>
-               a la_spiaggetta_21, <br>
-              gustati la nostra <br>
-              atmosfera conviviale, <br>
-              i nostri piatti e le <br>
-              nostre pizze e viaggia <br>
-              con la nostra nuova <br>
+              Ti diamo il benvenuto <br class="br">
+               a la_spiaggetta_21, <br class="br">
+              gustati la nostra <br class="br">
+              atmosfera conviviale, <br class="br">
+              i nostri piatti e le <br class="br">
+              nostre pizze e viaggia <br class="br">
+              con la nostra nuova <br class="br">
               drink list.
             </p>
           </div>
-          <div class="col d-flex align-items-center flex-column">
+          <div class="col-12 d-flex align-items-center align-items-sm-start flex-column">
             <p class="putia-text m-0">QUESTO MENÙ È STATO CREATO DA:</p>
             <img class="logo-putia" src="../assets/logoputia.svg" alt="">
           </div>
         </div>
       </div>
-          <div class="col-6 d-flex align-items-center ">
-            <div class="row row-menu w-100">
+          <div class="col-6 d-flex align-items-center justify-content-sm-center ">
+            <div class="row row-menu w-none w-100">
               <div class="col-12 word-container">
                 <h2>M</h2>
                 <img class="fiore-1" src="../assets/fiore-1.png" alt="">

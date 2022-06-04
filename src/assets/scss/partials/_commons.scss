@@ -104,7 +104,18 @@
   }
 
   @media only screen and (min-width: 576px) {
-    .bg-fire {
-      background-color: unset;
+    .br {
+      display: none;
     }
+  }
+
+
+  @media only screen and (min-width: 577px) {
+    .welcome {
+      font-size: 30px;
+    }
+
+    .w-none {
+      width: 35% !important;
+     }
   }
