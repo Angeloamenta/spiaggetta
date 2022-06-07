@@ -96,7 +96,7 @@ data() { return {
             nome: "Semplice",
             categoria: "pizza",
             condimenti: "mozzarella di bufala, datterino in cottura, basilico, olio evo ",
-            prezzo:7.5
+            prezzo:8
         },
         {
             nome: "Crudaiola",
