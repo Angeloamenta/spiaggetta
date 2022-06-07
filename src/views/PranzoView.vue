@@ -84,7 +84,7 @@ data() { return {
         {
             nome: "La Magra",
             categoria: "piatti",
-            condimenti: "carpaccio di fassona, rucola, grana, vinagrette al limone, olio evo",
+            condimenti: "carpaccio di fassona, rucola, grana, vinaigrette al limone, olio evo",
             prezzo: 13,
         },
         {
@@ -94,7 +94,7 @@ data() { return {
             prezzo: 13,
         },
         {
-            nome: "Un 'po' di tartarre",
+            nome: "Un 'po' di tartare",
             categoria: "piatti",
             condimenti: "tartare di fassona con mela verde e chicchi di melograno, senape",
             prezzo: 15,
@@ -102,7 +102,7 @@ data() { return {
         {
             nome: "Sampieri",
             categoria: "piatti",
-            condimenti: "tartare di salmone, avocado, erba cipollina, vinagrette al limone",
+            condimenti: "tartare di salmone, avocado, erba cipollina, vinaigrette al limone",
             prezzo: 15,
         },
 

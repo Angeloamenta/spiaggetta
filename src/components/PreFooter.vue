@@ -2,9 +2,9 @@
   <section>
     <div class="container-fluid menu-bg m-0">
       <ul>
-          <li v-show="switchShow">Coperto: 2.5</li>
-          <li>Se sapete di essere <strong>allercigi</strong> o <strong>intolleranti</strong> a determinati alimenti, vi preghiamo di comunicarlo al nostro personale prima di effettuare la vostra ordinazione.<br>
-          I piatti contenuti nel menu potrebbero contenere i seguenti allergeni:
+          <li v-show="switchShow">Coperto: 2.5 €</li>
+          <li>Se sapete di essere <strong>allergici</strong> o <strong>intolleranti</strong> a determinati alimenti, vi preghiamo di comunicarlo al nostro personale prima di effettuare la vostra ordinazione.<br>
+          I piatti contenuti nel menù potrebbero contenere i seguenti allergeni:
           <ul>
             <li>Cereali e derivati</li>
             <li>Crostacei</li>
