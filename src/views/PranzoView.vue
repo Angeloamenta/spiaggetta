@@ -96,7 +96,7 @@ data() { return {
         {
             nome: "Un 'po' di tartarre",
             categoria: "piatti",
-            condimenti: "tartare di fassona con mango e chicchi di melograno, senape",
+            condimenti: "tartare di fassona con mela verde e chicchi di melograno, senape",
             prezzo: 15,
         },
         {

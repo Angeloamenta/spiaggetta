@@ -337,7 +337,7 @@ data() { return {
             prezzo: 3,
         },
         {
-            nome: "jeghermaister",
+            nome: "Jägermeister",
             categoria: "amari",
             prezzo: 3,
         },
