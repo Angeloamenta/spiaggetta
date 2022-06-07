@@ -278,12 +278,12 @@ data() { return {
 
         },
         {
-            nome: "succo di frutta ace, pesca, ananas",
+            nome: "succo di frutta ace/pesca/ananas",
             categoria: "bevande",
             prezzo: 2,
         },
         {
-            nome: "the pesca, limone, ananas",
+            nome: "the pesca/limone/ananas",
             categoria: "bevande",
             prezzo: 2.5,
         },
