@@ -60,7 +60,41 @@ mounted() {
 
 
   }
+
 },
+ watch: {
+    $route(to, from) {
+      let bar = document.querySelector(".navbar-1")
+      if (window.location.hash == "#/") {
+  bar.classList.add("ceruleo")
+  bar.classList.remove("rosso")
+  bar.classList.remove("giallo")
+  bar.classList.remove("viola")
+
+  }else if (window.location.hash == "#/pranzo") {
+    bar.classList.add("giallo")
+    bar.classList.remove("rosso")
+    bar.classList.remove("ceruleo")
+    bar.classList.remove("viola")
+
+
+  }else if (window.location.hash == "#/cena") {
+    bar.classList.add("rosso")
+    bar.classList.remove("giallo")
+    bar.classList.remove("ceruleo")
+    bar.classList.remove("viola")
+
+
+  }else if (window.location.hash == "#/Drink"){
+    bar.classList.add("viola")
+    bar.classList.remove("rosso")
+    bar.classList.remove("ceruleo")
+    bar.classList.remove("giallo")
+
+
+  }
+    }
+  },
 
 methods: {
   
@@ -205,7 +239,7 @@ nav a.router-link-exact-active {
       background-color: #00000080;
       border-radius: 25px;
       color: white;
-      
+
 }
 
 .rout {
