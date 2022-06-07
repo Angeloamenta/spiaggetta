@@ -227,7 +227,7 @@ data() { return {
         {
             nome: "la spiaggetta ",
             categoria: "pizza mare",
-            condimenti: "salsa di pomodoro, polipo*, gamberetti*, cozze*, gamberoni*, prezzemolo, olio evo",
+            condimenti: "salsa di pomodoro, polpo*, gamberetti*, cozze*, gamberoni*, prezzemolo, olio evo",
             prezzo:16,
             title: "Pizze Di Mare"
         },
