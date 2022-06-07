@@ -64,6 +64,7 @@ mounted() {
 },
  watch: {
     $route(to, from) {
+      console.log('eeeeeeeeeeeee', this);
       let bar = document.querySelector(".navbar-1")
       if (window.location.hash == "#/") {
   bar.classList.add("ceruleo")
@@ -242,9 +243,15 @@ nav a.router-link-exact-active {
 
 }
 
+
+
 .rout {
   padding: 6px 20px;
   text-decoration: none;
+}
+
+.rout:visited, .rout:hover, .rout:active {
+  color: white;
 }
 
 .prefooter {
