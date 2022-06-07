@@ -63,7 +63,7 @@ data() { return {
         {
             nome: "Tonno",
             categoria: "insalata",
-            condimenti: "iceberg,rucola, valeriana, tonno, olive, mozzarella",
+            condimenti: "iceberg, rucola, valeriana, tonno, olive, mozzarella",
             prezzo: 10
         },
         {
