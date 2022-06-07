@@ -144,7 +144,7 @@ data() { return {
             prezzo: 6,
         },
         {
-            nome: "LONG ISLAND ICE TEA",
+            nome: "LONG ISLAND ICED TEA",
             categoria: "classici",
             condimenti: "gin,vodka, rum blanco, tequila, lime, coca cola",
             prezzo: 6,
