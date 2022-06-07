@@ -63,32 +63,32 @@ data() { return {
         {
             nome: "Blue summer",
             categoria: "nostri",
-            condimenti: "lime, cordial lime & blu curacao, rum blanco)",
+            condimenti: "lime, cordial lime & blu curacao, rum blanco",
             prezzo: 8,
             title: "I nostri drink"
         },
         {
             nome: "Green Woods",
             categoria: "nostri",
-            condimenti: "lime, zucchero all’alloro, melone, gin, dash di midori)",
+            condimenti: "lime, zucchero all’alloro, melone, gin, dash di midori",
             prezzo: 8
         },
         {
             nome: "Strawberry Basil...Forever",
             categoria: "nostri",
-            condimenti: "zucchero, lime, fragole, vodka al basilico, soda al pompelmo)",
+            condimenti: "zucchero, lime, fragole, vodka al basilico, soda al pompelmo",
             prezzo: 8
         },
         {
             nome: "Butter Trid",
             categoria: "nostri",
-            condimenti: "limone, ananas, bourbon al burro, dash di angostura)",
+            condimenti: "limone, ananas, bourbon al burro, dash di angostura",
             prezzo: 8
         },
         {
             nome: "Fresh Alexander",
             categoria: "nostri",
-            condimenti: "limone, orzata,brandy, stillabunt, bitter al cioccolato, ginger beer)",
+            condimenti: "limone, orzata,brandy, stillabunt, bitter al cioccolato, ginger beer",
             prezzo: 8
         },
 
