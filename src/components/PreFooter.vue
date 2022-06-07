@@ -89,10 +89,10 @@ background-color: #929982;
 background-color: #493843;
 }
 .anidride{
-background-color: #E5D0CC;
+background-color: #9c8a87;
 }
 .lupini{
-background-color: #E6F8B2;
+background-color: #95ac51;
 }
 .molluschi{
   background-color: #BAFF29;
