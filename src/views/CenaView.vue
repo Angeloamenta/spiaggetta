@@ -101,7 +101,7 @@ data() { return {
         {
             nome: "Crudaiola",
             categoria: "pizza",
-            condimenti: "mozzarella fior di latte, crudo, datterino, basilico, olio evo (tutto a crudo)*",
+            condimenti: "mozzarella fior di latte, prosciutto crudo, datterino, basilico, olio evo (tutto a crudo)",
             prezzo:8
         },
         {
@@ -143,13 +143,13 @@ data() { return {
         {
             nome: "Valtellina",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, bresaola, rucola,grana, olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, bresaola, rucola, grana, olio evo",
             prezzo:9.5
         },
         {
             nome: "Parmigiana",
             categoria: "pizza",
-            condimenti: "salsa di pomodoro, mozzarella, uovo, cotto, melanzana fritta, grana, olio evo",
+            condimenti: "salsa di pomodoro, mozzarella, uovo, prosciutto cotto, melanzana fritta, grana, olio evo",
             prezzo:9
         },
         {
@@ -200,7 +200,7 @@ data() { return {
         {
             nome: "La Fornace",
             categoria: "pizza speciale",
-            condimenti: "mozzarella, capocollo di suino nero, datterino, burrata,grana, basilico, olio evo ",
+            condimenti: "mozzarella, capocollo di suino nero, datterino, burrata, grana, basilico, olio evo ",
             prezzo:13
         },
         {
@@ -255,14 +255,14 @@ data() { return {
         {
             nome: "IL VEGETARIANO",
             categoria: "piatti unici",
-            condimenti: "datterino confit, radicchio grigliato, melanzana grigliata, burrata di bufala, basilico,crostoni, olio evo",
+            condimenti: "datterino confit, radicchio grigliato, melanzana grigliata, burrata di bufala, basilico, crostoni, olio evo",
             prezzo:13,
             title: "Piatti unici"
         },
         {
             nome: "IL CARNIVORO",
             categoria: "piatti unici",
-            condimenti: "datterino confit, carne salada, mozzarella di bufala, patatine fritte, crostoni, olio evo",
+            condimenti: "datterino confit, carne salada, mozzarella di bufala, patatine fritte*, crostoni, olio evo",
             prezzo:15,
         },
         {
@@ -275,7 +275,7 @@ data() { return {
         // frigitoria
 
         {
-            nome: "patatine fritte",
+            nome: "patatine fritte*",
             categoria: "friggitoria",
             prezzo:4,
             title: "Friggitoria"

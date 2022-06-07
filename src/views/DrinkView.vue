@@ -63,32 +63,32 @@ data() { return {
         {
             nome: "Blue summer",
             categoria: "nostri",
-            condimenti: "(lime, cordial lime & blu curacao, rum blanco)",
+            condimenti: "lime, cordial lime & blu curacao, rum blanco)",
             prezzo: 8,
             title: "I nostri drink"
         },
         {
             nome: "Green Woods",
             categoria: "nostri",
-            condimenti: "(lime,zucchero all’alloro, melone,gin, dash di midori)",
+            condimenti: "lime, zucchero all’alloro, melone, gin, dash di midori)",
             prezzo: 8
         },
         {
             nome: "Strawberry Basil...Forever",
             categoria: "nostri",
-            condimenti: "(zucchero,lime, fragole, vodka al basilico, soda al pompelmo)",
+            condimenti: "zucchero, lime, fragole, vodka al basilico, soda al pompelmo)",
             prezzo: 8
         },
         {
             nome: "Butter Trid",
             categoria: "nostri",
-            condimenti: "(limone,ananas,bourbon al burro, dash di angostura)",
+            condimenti: "limone, ananas, bourbon al burro, dash di angostura)",
             prezzo: 8
         },
         {
             nome: "Fresh Alexander",
             categoria: "nostri",
-            condimenti: "(limone, orzata,brandy, stillabunt, bitter al cioccolato, ginger beer)",
+            condimenti: "limone, orzata,brandy, stillabunt, bitter al cioccolato, ginger beer)",
             prezzo: 8
         },
 
@@ -97,86 +97,86 @@ data() { return {
         {
             nome: "NEGRONI",
             categoria: "classici",
-            condimenti: "(bitter campari, vermouth rosso, gin)",
+            condimenti: "bitter campari, vermouth rosso, gin",
             prezzo: 6,
             title: "Drink Classici"
         },
         {
             nome: "AMERICANO",
             categoria: "classici",
-            condimenti: "(bitter campari, vermouth rosso, soda)",
+            condimenti: "bitter campari, vermouth rosso, soda",
             prezzo: 6,
         },
         {
             nome: "MI-TO",
             categoria: "classici",
-            condimenti: "(bitter campari, vermouth rosso)",
+            condimenti: "bitter campari, vermouth rosso",
             prezzo: 6,
         },
         {
             nome: "APEROL SPRITZ",
             categoria: "classici",
-            condimenti: "(aperol, prosecco, soda)",
+            condimenti: "aperol, prosecco, soda",
             prezzo: 6,
         },
         {
             nome: "CAMPARI SPRITZ",
             categoria: "classici",
-            condimenti: "(bitter campari, prosecco,soda)",
+            condimenti: "bitter campari, prosecco, soda",
             prezzo: 6,
         },
         {
             nome: "HUGO SPRITZ",
             categoria: "classici",
-            condimenti: "( St.germain, prosecco, menta)",
+            condimenti: " St. Germain, prosecco, menta",
             prezzo: 7,
         },
         {
             nome: "MOSCOW MULE",
             categoria: "classici",
-            condimenti: "(lime,vodka, ginger beer)",
+            condimenti: "lime, vodka, ginger beer",
             prezzo: 6,
         },
         {
             nome: "MARGARITA",
             categoria: "classici",
-            condimenti: "(tequila, triple sec, lime, sale)",
+            condimenti: "tequila, triple sec, lime, sale",
             prezzo: 6,
         },
         {
             nome: "LONG ISLAND ICE TEA",
             categoria: "classici",
-            condimenti: "(gin,vodka, rum blanco, tequila, lime, coca cola)",
+            condimenti: "gin,vodka, rum blanco, tequila, lime, coca cola",
             prezzo: 6,
         },
         {
             nome: "MOJITO ORIGINAL",
             categoria: "classici",
-            condimenti: "(zucchero, lime,menta, rum blanco, soda)",
+            condimenti: "zucchero, lime,menta, rum blanco, soda",
             prezzo: 6,
         },
         {
             nome: "MANHATTAN",
             categoria: "classici",
-            condimenti: "(rye whisky, vermouth rosso, angostura)",
+            condimenti: "rye whisky, vermouth rosso, angostura",
             prezzo: 6,
         },
         {
             nome: "OLD FASHIONED",
             categoria: "classici",
-            condimenti: "(bourbon whisky, zolletta di zucchero, angostura, soda)",
+            condimenti: "bourbon whisky, zolletta di zucchero, angostura, soda",
             prezzo: 6,
         },
         {
             nome: "DAIQUIRI",
             categoria: "classici",
-            condimenti: "(zucchero, lime, rum anejo)",
+            condimenti: "zucchero, lime, rum anejo",
             prezzo: 6,
         },
         {
             nome: "GIMLET",
             categoria: "classici",
-            condimenti: "(zucchero, cordial lime, gin)",
+            condimenti: "zucchero, cordial lime, gin",
             prezzo: 6,
         },
 
