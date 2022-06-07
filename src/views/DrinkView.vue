@@ -152,7 +152,7 @@ data() { return {
         {
             nome: "MOJITO ORIGINAL",
             categoria: "classici",
-            condimenti: "zucchero, lime,menta, rum blanco, soda",
+            condimenti: "zucchero, lime, menta, rum blanco, soda",
             prezzo: 6,
         },
         {
