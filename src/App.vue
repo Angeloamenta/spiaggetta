@@ -1,6 +1,6 @@
 <template>
-  <div id="app" class="overflow-hidden">
-    <nav class="navbar-1 d-flex justify-content-center align-items-center p-3">
+  <div v-touch:swipe.left="swipeHandler" v-touch:swipe.right="swipeRx" id="app" class="overflow-hidden">
+    <nav  class="navbar-1 d-flex justify-content-center align-items-center p-3">
       <div class="d-flex d-flex justify-content-around align-items-center w-50 h-100">
         <router-link class="rout" to="/" @click.native="changeHome()">Home</router-link>
       <router-link class="rout" to="/pranzo" @click.native="changePranzo()">Pranzo</router-link>
@@ -16,6 +16,7 @@
 
 import PreFooter from "@/components/PreFooter.vue";
 
+
 export default {
     components: {
     PreFooter,
@@ -24,10 +25,12 @@ data() {
   return {
     page:"",
     route: window.location.hash,
+    counter: null,
 
   }
 },
 mounted() {
+  this.counter = 0
   
   console.log(window.location.hash);
       let bar = document.querySelector(".navbar-1")
@@ -37,12 +40,14 @@ mounted() {
   bar.classList.remove("rosso")
   bar.classList.remove("giallo")
   bar.classList.remove("viola")
+  this.counter = 0
 
   }else if (window.location.hash == "#/pranzo") {
     bar.classList.add("giallo")
     bar.classList.remove("rosso")
     bar.classList.remove("ceruleo")
     bar.classList.remove("viola")
+    this.counter = 1
 
 
   }else if (window.location.hash == "#/cena") {
@@ -50,6 +55,7 @@ mounted() {
     bar.classList.remove("giallo")
     bar.classList.remove("ceruleo")
     bar.classList.remove("viola")
+    this.counter = 2
 
 
   }else if (window.location.hash == "#/Drink"){
@@ -57,6 +63,7 @@ mounted() {
     bar.classList.remove("rosso")
     bar.classList.remove("ceruleo")
     bar.classList.remove("giallo")
+    this.counter = 3
 
 
   }
@@ -71,12 +78,17 @@ mounted() {
   bar.classList.remove("rosso")
   bar.classList.remove("giallo")
   bar.classList.remove("viola")
+  this.counter = 0
+  console.log(this.counter);
 
   }else if (window.location.hash == "#/pranzo") {
     bar.classList.add("giallo")
     bar.classList.remove("rosso")
     bar.classList.remove("ceruleo")
     bar.classList.remove("viola")
+    this.counter = 1
+  console.log(this.counter);
+
 
 
   }else if (window.location.hash == "#/cena") {
@@ -84,6 +96,9 @@ mounted() {
     bar.classList.remove("giallo")
     bar.classList.remove("ceruleo")
     bar.classList.remove("viola")
+    this.counter = 2
+  console.log(this.counter);
+
 
 
   }else if (window.location.hash == "#/Drink"){
@@ -91,6 +106,9 @@ mounted() {
     bar.classList.remove("rosso")
     bar.classList.remove("ceruleo")
     bar.classList.remove("giallo")
+    this.counter = 3
+  console.log(this.counter);
+
 
 
   }
@@ -98,6 +116,56 @@ mounted() {
   },
 
 methods: {
+
+  swipeHandler() {
+    console.log("aiò")
+    let rout = document.querySelectorAll('.rout')
+    let array = []
+    console.log(this.counter);
+    for (let i = 0; i < rout.length; i++) {
+      const element = rout[i];
+      console.log(element);
+      array.push(element)
+    }
+
+
+    if (this.counter == 0) {
+      array[1].click();
+      
+    }else if (this.counter == 1) {
+      array[2].click();
+    }else if (this.counter == 2) {
+      array[3].click();
+    }
+
+    console.log("arraypush",array);
+    
+  },
+
+  swipeRx() {
+    console.log("aiòpppp")
+    let rout = document.querySelectorAll('.rout')
+    let array = []
+    console.log(this.counter);
+    for (let i = 0; i < rout.length; i++) {
+      const element = rout[i];
+      console.log(element);
+      array.push(element)
+    }
+
+
+    if (this.counter == 3) {
+      array[2].click();
+      
+    }else if (this.counter == 2) {
+      array[1].click();
+    }else if (this.counter == 1) {
+      array[0].click();
+    }
+
+    console.log("arraypush",array);
+    
+  },
   
   changeHome() {
   let bar = document.querySelector(".navbar-1")

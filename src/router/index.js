@@ -5,6 +5,19 @@ import PranzoView from '../views/PranzoView.vue'
 import CenaView from '../views/CenaView.vue'
 import DrinkView from '../views/DrinkView.vue'
 
+import Vue2TouchEvents from 'vue2-touch-events'
+
+Vue.use(Vue2TouchEvents)
+// Vue.use(Vue2TouchEvents, {
+//   disableClick: false,
+//   touchClass: '',
+//   tapTolerance: 10,
+//   touchHoldTolerance: 400,
+//   swipeTolerance: 30,
+//   longTapTimeInterval: 400,
+//   namespace: 'touch'
+// })
+
 
 
 Vue.use(VueRouter)

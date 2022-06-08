@@ -66,6 +66,9 @@ export default {
   name: 'HomeView',
   components: {
     // HelloWorld
+  },
+  methods: {
+    
   }
 }
 </script>
