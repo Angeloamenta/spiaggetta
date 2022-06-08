@@ -137,36 +137,16 @@ data() { return {
 mounted() {
 
     this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
-    console.log("new", this.piatti2);
     
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
         var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
-        console.log(window.location.protocol);
-        console.log(window.location.host);
-        console.log(window.location.pathname);
-        console.log(window.location.search);
-        console.log("ok");
-
-        console.log(newURL);
 
         let proviamo = window.location.protocol + "//" + window.location.host + "/#/" + "pranzo"
 
-        console.log(proviamo);
-
-        console.log(window.location.hash);
-
-        if (window.location.hash = "#/pranzo") {
-            console.log("ok");
-            
-        }
-
         const elementi = document.querySelectorAll(".elemento");
-        console.log("elementi", elementi);
-        console.log(Array.from(elementi));
          const elementiArray = Array.from(elementi);
-         console.log(elementiArray);
          this.elementi = elementiArray
     this.elementi[0].classList.add("active-element")
 
@@ -176,8 +156,7 @@ mounted() {
 methods: {
     setAll() {
         this.setter = "All";
-            this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
-    console.log("new", this.piatti2);
+        this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
     
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
@@ -196,9 +175,8 @@ methods: {
 
     setInsalata() {
         this.setter = "insalata";
-            this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
-    console.log("new", this.piatti2);
-    
+        this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
+
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
     }
@@ -215,8 +193,8 @@ methods: {
 
       setPiatti() {
         this.setter = "piatti";
-            this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
-    console.log("new", this.piatti2);
+        this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
+
     
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;
@@ -237,8 +215,7 @@ methods: {
 
     setDessert() {
         this.setter = "dessert";
-            this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
-    console.log("new", this.piatti2);
+        this.piatti2 =  this.piatti.filter((element) => element.categoria == this.setter)
     
     if ( this.setter == "All") {
      this.piatti2 = this.piatti;

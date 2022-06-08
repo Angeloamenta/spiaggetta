@@ -36,11 +36,10 @@ data() {return {
 }
 },
 mounted() {
-    console.log("test",window.location.hash)
+
     if (window.location.hash == "#/Drink") {
       this.switchShow = false 
     }
-      console.log("show",this.switchShow);
 }
 
 }

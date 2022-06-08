@@ -31,8 +31,6 @@ data() {
 },
 mounted() {
   this.counter = 0
-  
-  console.log(window.location.hash);
       let bar = document.querySelector(".navbar-1")
 
   if (window.location.hash == "#/") {
@@ -71,7 +69,6 @@ mounted() {
 },
  watch: {
     $route(to, from) {
-      console.log('eeeeeeeeeeeee', this);
       let bar = document.querySelector(".navbar-1")
       if (window.location.hash == "#/") {
   bar.classList.add("ceruleo")
@@ -79,7 +76,6 @@ mounted() {
   bar.classList.remove("giallo")
   bar.classList.remove("viola")
   this.counter = 0
-  console.log(this.counter);
 
   }else if (window.location.hash == "#/pranzo") {
     bar.classList.add("giallo")
@@ -87,7 +83,6 @@ mounted() {
     bar.classList.remove("ceruleo")
     bar.classList.remove("viola")
     this.counter = 1
-  console.log(this.counter);
 
 
 
@@ -97,7 +92,6 @@ mounted() {
     bar.classList.remove("ceruleo")
     bar.classList.remove("viola")
     this.counter = 2
-  console.log(this.counter);
 
 
 
@@ -107,7 +101,6 @@ mounted() {
     bar.classList.remove("ceruleo")
     bar.classList.remove("giallo")
     this.counter = 3
-  console.log(this.counter);
 
 
 
@@ -118,13 +111,11 @@ mounted() {
 methods: {
 
   swipeHandler() {
-    console.log("aiò")
     let rout = document.querySelectorAll('.rout')
     let array = []
-    console.log(this.counter);
+
     for (let i = 0; i < rout.length; i++) {
       const element = rout[i];
-      console.log(element);
       array.push(element)
     }
 
@@ -136,20 +127,15 @@ methods: {
       array[2].click();
     }else if (this.counter == 2) {
       array[3].click();
-    }
-
-    console.log("arraypush",array);
-    
+    }  
   },
 
   swipeRx() {
-    console.log("aiòpppp")
+
     let rout = document.querySelectorAll('.rout')
     let array = []
-    console.log(this.counter);
     for (let i = 0; i < rout.length; i++) {
       const element = rout[i];
-      console.log(element);
       array.push(element)
     }
 
@@ -162,8 +148,6 @@ methods: {
     }else if (this.counter == 1) {
       array[0].click();
     }
-
-    console.log("arraypush",array);
     
   },
   
@@ -192,7 +176,6 @@ methods: {
   changePranzo() {
 
     let bar = document.querySelector(".navbar-1")
-    console.log(bar);
     bar.classList.add("giallo")
 
     if (bar.classList.contains("ceruleo")) {

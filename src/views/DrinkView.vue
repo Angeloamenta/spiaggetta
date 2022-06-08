@@ -458,21 +458,13 @@ data() { return {
 },
 mounted() {
     this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
-    console.log("new", this.drinks2);
-    
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
 
     var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
-        console.log(newURL);
-
-
-            const elementi = document.querySelectorAll(".elemento");
-        console.log("elementi", elementi);
-        console.log(Array.from(elementi));
+        const elementi = document.querySelectorAll(".elemento");
          const elementiArray = Array.from(elementi);
-         console.log(elementiArray);
          this.elementi = elementiArray
     this.elementi[0].classList.add("active-element")
 },
@@ -481,9 +473,7 @@ methods: {
 
     setAll() {
         this.setter = "All";
-            this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
-    console.log("new", this.drinks2);
-    
+        this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
@@ -501,9 +491,7 @@ methods: {
 
     setNostriDrink() {
         this.setter = "nostri";
-            this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
-    console.log("new", this.drinks2);
-    
+        this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
@@ -520,9 +508,7 @@ methods: {
 
     setClassici() {
         this.setter = "classici";
-            this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
-    console.log("new", this.drinks2);
-    
+        this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
@@ -539,9 +525,7 @@ methods: {
 
     setBevande() {
         this.setter = "bevande";
-            this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
-    console.log("new", this.drinks2);
-    
+         this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
@@ -558,8 +542,7 @@ methods: {
 
     setAmari() {
         this.setter = "amari";
-            this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
-    console.log("new", this.drinks2);
+        this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
     
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
@@ -577,9 +560,7 @@ methods: {
 
     setDistillati() {
         this.setter = "distillati";
-            this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
-    console.log("new", this.drinks2);
-    
+        this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
@@ -596,9 +577,8 @@ methods: {
 
     setGin() {
         this.setter = "gin";
-            this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
-    console.log("new", this.drinks2);
-    
+        this.drinks2 =  this.drinks.filter((element) => element.categoria == this.setter)
+
     if ( this.setter == "All") {
      this.drinks2 = this.drinks;
     }
