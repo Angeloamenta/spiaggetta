@@ -70,17 +70,17 @@ data() { return {
         {
             nome: "Green Woods",
             categoria: "nostri",
-            condimenti: "lime, zucchero all’alloro, melone, gin, dash di midori",
+            condimenti: "lime, zucchero, melone, gin, dash di midori",
             prezzo: 8
         },
         {
             nome: "Strawberry Basil...Forever",
             categoria: "nostri",
-            condimenti: "zucchero, lime, fragole, vodka al basilico, soda al pompelmo",
+            condimenti: "zucchero, lime, fragole, vodka al basilico, soda",
             prezzo: 8
         },
         {
-            nome: "Butter Trid",
+            nome: "Butter Trio",
             categoria: "nostri",
             condimenti: "limone, ananas, bourbon al burro, dash di angostura",
             prezzo: 8
@@ -88,7 +88,7 @@ data() { return {
         {
             nome: "Fresh Alexander",
             categoria: "nostri",
-            condimenti: "limone, orzata,brandy, stillabunt, bitter al cioccolato, ginger beer",
+            condimenti: "limone, orzata,brandy, stillabunt, ginger beer",
             prezzo: 8
         },
 
