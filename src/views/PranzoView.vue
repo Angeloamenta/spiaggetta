@@ -15,7 +15,7 @@
               </div>
           </div>
       </div>
-      <div class="container-fluid menu-bg">
+      <div class="container-fluid menu-bg padding-200">
           <div v-for="(piatto, index) in piatti2" :key="index" class="row mb-4">
               <div v-show="piatto.title" class="col-12 text-center mt-3 mb-5 title-show">
                     <h1 class="piatto-title" >{{piatto.title}}</h1>
@@ -25,7 +25,7 @@
                     <h3 class="title-name">{{piatto.nome}}</h3>
                     <h3 class="price"> € {{piatto.prezzo}}</h3>
               </div>
-              <div class="col-12 col-md-4 ">
+              <div class="col-12 col-md-8 ">
                         <!-- <h5 v-if="piatto.condimenti == null"></h5>
                         <h5 v-else>Condimenti</h5> -->
                         <p class="condimenti">{{piatto.condimenti}}</p>

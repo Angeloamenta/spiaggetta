@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-          <div class="container-fluid menu-bg">
+          <div class="container-fluid menu-bg padding-200">
                 <div class="container-fluid">
           <div v-for="(drink, index) in drinks2" :key="index" class="row mb-4">
               <div v-show="drink.title" class="col-12 text-center mt-3 mb-5 title-show">
@@ -31,7 +31,7 @@
                     <h3 class="title-name">{{drink.nome}}</h3>
                     <h3 class="price"> € {{drink.prezzo}}</h3>
               </div>
-              <div class="col-12 col-md-4 ">
+              <div class="col-12 col-md-8 ">
                         <!-- <h5 v-if="drink.condimenti == null"></h5>
                         <h5 v-else>Condimenti</h5> -->
                         <p class="condimenti">{{drink.condimenti}}</p>

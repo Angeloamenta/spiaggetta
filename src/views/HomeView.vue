@@ -1,6 +1,6 @@
 <template>
-  <div class="home container-fluid">
-    <div class="row home-row pt-2">
+  <div class="home container-fluid d-flex justify-content-center">
+    <div class="row home-row row-50 pt-2">
       <div class="col-6 d-flex justify-content-start">
         <div class="row">
           <div class="col-12 logo-container">
@@ -26,7 +26,7 @@
         </div>
       </div>
           <div class="col-6 d-flex align-items-center justify-content-sm-center ">
-            <div class="row row-menu w-100">
+            <div class="row row-menu wid-100 wid-50">
               <div class="col-12 word-container">
                 <h2>M</h2>
                 <img class="fiore-1" src="../assets/fiore-1.png" alt="">
@@ -80,6 +80,9 @@ export default {
   color:white;
 }
 
+.wid-100{
+  width: 100%;
+}
 
 .icon {
   width: 300px;
