@@ -103,16 +103,14 @@
     border-radius: 25px;
   }
 
-  @media only screen and (min-width: 576px) {
-    .br {
-      display: none;
-    }
-  }
+
 
 
   @media only screen and (min-width: 577px) {
     .welcome {
       font-size: 20px;
+
+
     }
 
     .w-none {
@@ -132,6 +130,13 @@
      .line-cena {
       width: 20% !important;
      }
+
+     .padding-200 {
+      padding: 0 100px !important;
+     }
+  }
+
+  @media only screen and (min-width: 799px) {
 
      .padding-200 {
       padding: 0 200px !important;
