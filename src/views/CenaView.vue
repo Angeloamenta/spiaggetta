@@ -232,7 +232,7 @@ data() { return {
             title: "Pizze Di Mare"
         },
         {
-            nome: "Sampiruotti",
+            nome: "Sampieruoti",
             categoria: "pizza mare",
             condimenti: "zucchina fritta, mozzarella, gamberoni*, prezzemolo, olio evo",
             prezzo:14,
@@ -269,7 +269,7 @@ data() { return {
             nome: "LA PESCATRICE",
             categoria: "piatti unici",
             condimenti: "datterino confit, tartare di salmone, avocado, zucchine grigliate, crostoni, olio evo",
-            prezzo:16,
+            prezzo:15,
         },
 
         // frigitoria
