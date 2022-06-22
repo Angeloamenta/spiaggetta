@@ -110,8 +110,6 @@ mounted() {
 
 methods: {
 
-  
-
   swipeHandler() {
     let rout = document.querySelectorAll('.rout')
     let array = []
