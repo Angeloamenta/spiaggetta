@@ -64,7 +64,7 @@ data() { return {
             condimenti: "mozzarella, olio evo",
             prezzo:5,
             title: "Pizze Classiche",
-            cereali:true
+            cereali:true,
         },
         {
             nome: "Margherita",
