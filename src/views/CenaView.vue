@@ -32,6 +32,9 @@
                         <h5 v-else>Condimenti</h5> -->
                         <p class="condimenti">{{piatto.condimenti}}</p>
               </div>
+              <div class="col-12">
+                <img v-show="cereali" src="../assets/cereali.png" alt=""></img>
+              </div>
           </div>
       </div>
     <PreFooter class="prefooter"/>
@@ -60,7 +63,8 @@ data() { return {
             categoria: "pizza",
             condimenti: "mozzarella, olio evo",
             prezzo:5,
-            title: "Pizze Classiche"
+            title: "Pizze Classiche",
+            cereali:true
         },
         {
             nome: "Margherita",

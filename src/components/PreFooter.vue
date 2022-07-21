@@ -6,20 +6,20 @@
           <li>Se sapete di essere <strong>allergici</strong> o <strong>intolleranti</strong> a determinati alimenti, vi preghiamo di comunicarlo al nostro personale prima di effettuare la vostra ordinazione.<br>
           I piatti contenuti nel menù potrebbero contenere i seguenti allergeni:
           <ul class="list-unstyled">
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni cereali">C</span> Cereali e derivati</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni crostacei">C</span> Crostacei</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni uova">U</span> Uova</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni pesce">P</span> Pesce</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni arachidi">A</span> Arachidi</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni soia">S</span> Soia</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni latte">L</span> Latte</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni guscio">F</span> Frutta a guscio</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni sedano">S</span> Sedano</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni senape">S</span> Senape</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni sesamo">S</span> Sesamo</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni anidride">A</span> Anidride solforosa e solfiti</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni lupini">L</span> Lupini</li>
-            <li class="d-flex align-items-center mb-2"> <span class=" allergeni molluschi">M</span> Molluschi</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/cereali.png" alt=""> Cereali e derivati</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/crostacei.png" alt=""> Crostacei</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/uova.png" alt=""> Uova</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/pesce.png" alt=""> Pesce</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/arachidi.png" alt=""> Arachidi</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/soia.png" alt=""> Soia</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/latte.png" alt=""> Latte</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/guscio.png" alt=""> Frutta a guscio</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/sedano.png" alt=""> Sedano</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/senape.png" alt=""> Senape</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/sesamo.png" alt=""> Sesamo</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/anidride solforosa e solfiti.png" alt=""> Anidride solforosa e solfiti</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/lupini.png" alt=""> Lupini</li>
+            <li class="d-flex align-items-center mb-2"> <img src="../assets/molluschi.png" alt=""> Molluschi</li>
           </ul>
           </li>
           <li v-show="switchShow">N.B. supplemento da €1,00 a €3,50</li>
