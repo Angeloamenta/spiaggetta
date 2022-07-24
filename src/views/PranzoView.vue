@@ -30,6 +30,23 @@
                         <h5 v-else>Condimenti</h5> -->
                         <p class="condimenti">{{piatto.condimenti}}</p>
               </div>
+              <div class="col-12">
+                <span v-show="piatto.allergeni" class="mx-2">Allergeni:</span>
+                <img v-show="piatto.cereali" src="../assets/cereali.png" alt="">
+                <img v-show="piatto.crostacei" src="../assets/crostacei.png" alt="">
+                <img v-show="piatto.uova" src="../assets/uova.png" alt="">
+                <img v-show="piatto.pesce" src="../assets/pesce.png" alt="">
+                <img v-show="piatto.arachidi" src="../assets/arachidi.png" alt="">
+                <img v-show="piatto.soia" src="../assets/soia.png" alt="">
+                <img v-show="piatto.latte" src="../assets/latte.png" alt="">
+                <img v-show="piatto.guscio" src="../assets/guscio.png" alt="">
+                <img v-show="piatto.sedano" src="../assets/sedano.png" alt="">
+                <img v-show="piatto.senape" src="../assets/senape.png" alt="">
+                <img v-show="piatto.sesamo" src="../assets/sesamo.png" alt="">
+                <img v-show="piatto.anidride" src="../assets/anidride solforosa e solfiti.png" alt="">
+                <img v-show="piatto.lupini" src="../assets/lupini.png" alt="">
+                <img v-show="piatto.molluschi" src="../assets/molluschi.png" alt="">
+              </div>
           </div>
       </div>
     <PreFooter class="prefooter"/>
@@ -58,19 +75,64 @@ data() { return {
             condimenti: "iceberg, radicchio, valeriana, datterino, grana, bresaola",
             prezzo: 10,
             title: "Insalatone",
-            class: "bg-success"
+            class: "bg-success",
+            anidride: true,
+            arachidi: false,
+            cereali: true,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
         },
         {
             nome: "Tonno",
             categoria: "insalata",
             condimenti: "iceberg, rucola, valeriana, tonno, olive, mozzarella",
-            prezzo: 10
+            prezzo: 10,
+            anidride: true,
+            arachidi: false,
+            cereali: true,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
         },
         {
             nome: "Greca",
             categoria: "insalata",
             condimenti: "iceberg, cipolla, olive, cetriolo, datterino, feta, salsa yogurt",
             prezzo: 8,
+            anidride: true,
+            arachidi: false,
+            cereali: true,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
         },
 
         // piatti
@@ -79,31 +141,106 @@ data() { return {
             categoria: "piatti",
             condimenti: "datterino, fior di latte, basilico",
             prezzo: 8,
-            title: "I Nostri piatti"
+            title: "I Nostri piatti",
+            anidride: true,
+            arachidi: false,
+            cereali: false,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
         },
         {
             nome: "La Magra",
             categoria: "piatti",
             condimenti: "carpaccio di fassona, valeriana, grana, vinaigrette al limone, olio evo",
             prezzo: 13,
+            anidride: true,
+            arachidi: false,
+            cereali: true,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
         },
         {
             nome: "L'Adige",
             categoria: "piatti",
             condimenti: "carne salada “cotta”, fagioli borlotti, cipolla, olio evo",
             prezzo: 13,
+            anidride: true,
+            arachidi: false,
+            cereali: true,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
         },
         {
             nome: "Un 'po' di tartare",
             categoria: "piatti",
             condimenti: "tartare di fassona con mela verde, senape, cucunci, sale e pepe",
             prezzo: 13,
+            anidride: true,
+            arachidi: false,
+            cereali: true,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
         },
         {
             nome: "Sampieri",
             categoria: "piatti",
             condimenti: "tartare di salmone, avocado, erba cipollina, salmoriglio al limone",
             prezzo: 13,
+            anidride: true,
+            arachidi: false,
+            cereali: true,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
         },
 
         // dessert
