@@ -121,10 +121,25 @@ data() { return {
             allergeni: true,
         },
         {
-            nome: "Strawberry Basil...Forever",
+            nome: "salty bunch",
             categoria: "nostri",
-            condimenti: "zucchero, lime, fragole, vodka al basilico, soda",
+            condimenti: "Lime, sciroppo di uva maraschino Vodka al Basilico e sale",
             prezzo: 8,
+            anidride: false,
+            arachidi: false,
+            cereali: true,
+            crostacei: false,
+            guscio: false,
+            latte: true,
+            lupini: false,
+            molluschi: false,
+            pesce: false,
+            sedano: false,
+            senape: false,
+            sesamo: false,
+            soia: false,
+            uova: false,
+            allergeni: true,
     
         },
         {
@@ -606,38 +621,38 @@ data() { return {
         {
             nome: "amaro del capo",
             categoria: "amari",
-            prezzo: 3,
+            prezzo: 4,
             title: "Amari"
         },
         {
             nome: "amaro montenegro",
             categoria: "amari",
-            prezzo: 3,
+            prezzo: 4,
         },
         {
             nome: "amaro unnimaffissu",
             categoria: "amari",
-            prezzo: 3,
+            prezzo: 4,
         },
         {
             nome: "unicum",
             categoria: "amari",
-            prezzo: 3,
+            prezzo: 4,
         },
         {
             nome: "Jägermeister",
             categoria: "amari",
-            prezzo: 3,
+            prezzo: 4,
         },
         {
             nome: "limoncello",
             categoria: "amari",
-            prezzo: 3,
+            prezzo: 4,
         },
         {
             nome: "sambuca",
             categoria: "amari",
-            prezzo: 3,
+            prezzo: 4,
         },
         {
             nome: "liquore chinotto",
@@ -729,7 +744,7 @@ data() { return {
             allergeni: true,
         },
         {
-            nome: "whisky oban",
+            nome: "Laphroiag",
             categoria: "distillati",
             prezzo: 8,
 
@@ -822,7 +837,7 @@ data() { return {
         {
             nome: "gin mare",
             categoria: "gin",
-            prezzo: 7,
+            prezzo: 8,
             anidride: false,
             arachidi: false,
             cereali: true,
@@ -842,7 +857,7 @@ data() { return {
         {
             nome: "hendrick’s",
             categoria: "gin",
-            prezzo: 7,
+            prezzo: 8,
             anidride: false,
             arachidi: false,
             cereali: true,
