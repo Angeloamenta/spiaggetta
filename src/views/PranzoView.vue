@@ -215,7 +215,7 @@ data() { return {
             molluschi: false,
             pesce: false,
             sedano: false,
-            senape: false,
+            senape: true,
             sesamo: false,
             soia: false,
             uova: false,
